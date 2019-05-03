@@ -299,6 +299,15 @@ git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to 
     </item>
     
     <item>
+      <title>haproxy</title>
+      <link>https://f9a.github.io/post/uuid/b70be6d5-cd0b-5f56-8ab2-fd4474f1d6e8/</link>
+      <pubDate>Thu, 07 Apr 2016 00:33:01 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/b70be6d5-cd0b-5f56-8ab2-fd4474f1d6e8/</guid>
+      <description>Benutzerverwaltung Möchte man das nur bestimmte Benutzer Zugang auf ein vom HAProxy verwaltetes Backend haben. Kann man dies unterandem über die HTTP Basic Authentication handhaben. Die Standard Lösung wäre userlist zu verwenden das funktioniert prima bis zu einer besimmten Anzahl von Benutzern. Da man für jeden neu hinzugefügten/entferneten Benutzer haproxy neustarten muss und das ziemlich lang dauert zu Problemen führen. Daher kann man alternative mittels Lua Script das ganze ncoh aufbohren.</description>
+    </item>
+    
+    <item>
       <title>Create Tun/Tap devices</title>
       <link>https://f9a.github.io/post/uuid/5c8c76d4-b60b-558a-85c2-a88648b86f99/</link>
       <pubDate>Fri, 01 Apr 2016 23:00:00 +0100</pubDate>
@@ -469,15 +478,6 @@ Aktiviere eine Soundcard
 amixer set Master on # Wenn man mehrer Karten hat oder zu sonstigen Problemen kommt kann man probieren ob man mittels -c und vielleicht auch noch -D die Karten und das Device direkt ansprechen kann amixer -c 1 Master on  Informationen über die Soundcards
 cat /proc/asound/cards aplay -l aplay -L  Lautsprecher Testen
 speaker-test -D hw:1,3 -c 2  Dabei besteht die einfache Möglichkeit die Kanalanzahl zu übergeben (-c 2).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://f9a.github.io/blobs/haproxy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://f9a.github.io/blobs/haproxy/</guid>
-      <description>haproxy Benutzerverwaltung Möchte man das nur bestimmte Benutzer Zugang auf ein vom HAProxy verwaltetes Backend haben. Kann man dies unterandem über die HTTP Basic Authentication handhaben. Die Standard Lösung wäre userlist zu verwenden das funktioniert prima bis zu einer besimmten Anzahl von Benutzern. Da man für jeden neu hinzugefügten/entferneten Benutzer haproxy neustarten muss und das ziemlich lang dauert zu Problemen führen. Daher kann man alternative mittels Lua Script das ganze ncoh aufbohren.</description>
     </item>
     
   </channel>

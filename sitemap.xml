@@ -286,6 +286,11 @@
   </url>
   
   <url>
+    <loc>https://f9a.github.io/post/uuid/b70be6d5-cd0b-5f56-8ab2-fd4474f1d6e8/</loc>
+    <lastmod>2016-04-07T00:33:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://f9a.github.io/post/uuid/5c8c76d4-b60b-558a-85c2-a88648b86f99/</loc>
     <lastmod>2016-04-01T23:00:00+01:00</lastmod>
   </url>
@@ -404,11 +409,6 @@
   <url>
     <loc>https://f9a.github.io/categories/alsa/</loc>
     <lastmod>2014-05-01T14:54:06+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://f9a.github.io/blobs/haproxy/</loc>
     <priority>0</priority>
   </url>
   

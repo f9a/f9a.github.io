@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Pensieve</title>
+    <link>https://f9a.github.io/categories/javascript/</link>
+    <description>Recent content in javascript on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Wed, 17 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript Wüste! &#39;this&#39; is not the end</title>
+      <link>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</guid>
+      <description>Umgebung die JavaScript Konsole von mozilla console. ES5 das heißt Version 5.1 des Sprachstandards
+Damit das Sandel auch spaß macht
+git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to rumble  Prolog Die Sonne scheint. Crock sitz in seinem Auto. Wind weht durch seine Barthaare und lässt sie im klang der Stille umher tanzen. &amp;ldquo;Manchmal ist es einfach gut nur zu &amp;lsquo;Sein&amp;rsquo;!&amp;rdquo;. Jedoch ist es nicht so gut, einfach hier zu &amp;lsquo;Sein&amp;rsquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

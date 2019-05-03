@@ -21,6 +21,273 @@
     </item>
     
     <item>
+      <title>OpenSSl</title>
+      <link>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</guid>
+      <description>Zertifikat mit SNI Feldern SNI: Server Name Indication ist eine Erweiterung des x.509 Standards. Wann benötigt man diese Felder? Benutzt man zum Beispiel den golang http-client und baut eine Verbindung zu einem https Server auf überprüft ob der im Feld subjectAltName angegebene Wert mit dem host in der URL übereinstimmt.
+Bekommt man von einem Programm denn Error &amp;ldquo;Failed to tls handshake with x.x.x.x x509: cannot validate certificate for x.x.x.x because it doesn&amp;rsquo;t contain any IP SANs&amp;rdquo; gezeigt heißt in diesem Fall das das Zertifikat keine subjectAltName hinterlegt hat.</description>
+    </item>
+    
+    <item>
+      <title>Go Templates</title>
+      <link>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</guid>
+      <description>Ein Einführung in die Go Template Bibliothek.
+Ein Beispiel sagt mehr als 1000 Worte. Starten wir daher mit einem klassischen &amp;ldquo;Hello, World&amp;rdquo;, nicht, stattdessen gehen wir vorran mit &amp;ldquo;Mary had a little lamb&amp;rdquo;.
+package main import ( &amp;quot;html/template&amp;quot; &amp;quot;os&amp;quot; ) var littleLamb = ` Mary had a little lamb, little lamb, little lamb, Mary had a little lamb whose fleece was white as snow. And everywhere that Mary went Mary went, Mary went, everywhere that Mary went The lamb was sure to go.</description>
+    </item>
+    
+    <item>
+      <title>Go links</title>
+      <link>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</guid>
+      <description> Streaming bits and bytes  </description>
+    </item>
+    
+    <item>
+      <title>Go performance</title>
+      <link>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</guid>
+      <description>Links https://github.com/uber/go-torch</description>
+    </item>
+    
+    <item>
+      <title>Go refactoring</title>
+      <link>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</guid>
+      <description>http://spf13.com/post/go-fmt/</description>
+    </item>
+    
+    <item>
+      <title>Link list goroutines</title>
+      <link>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</guid>
+      <description> https://groups.google.com/forum/#!topic/golang-nuts/j51G7ieoKh4 https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs wie funktionieren sockets auf kernel ebene https://www.google.de/search?q=linux+socket+implementation&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gfe_rd=cr&amp;amp;ei=sX-nV4aEDeSg8wfT6IeYCA http://dave.cheney.net/2015/08/08/performance-without-the-event-loop https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit?pref=2&amp;amp;pli=1 http://stackoverflow.com/questions/1714136/can-you-detect-how-many-threads-a-given-number-of-goroutines-will-create https://www.youtube.com/watch?v=N3PWzBeLX2M&amp;amp;feature=youtu.be https://manning-content.s3.amazonaws.com/download/a/d666b07-be97-457d-90cc-36d7e79f0989/Sample-Ch06.pdf https://morsmachine.dk/go-scheduler https://morsmachine.dk/netpoller https://github.com/golang/go/blob/4fc9565ffce91c4299903f7c17a275f0786734a1/src/runtime/chan.go https://docs.google.com/document/d/1yIAYmbvL3JxOKOjuCyon7JhW4cSv1wy5hC0ApeGMV9s/pub  </description>
+    </item>
+    
+    <item>
+      <title>Route Specific Network Traffic Over VPN</title>
+      <link>https://f9a.github.io/post/uuid/84cb4537-e282-5183-b162-a8534a1f1c97/</link>
+      <pubDate>Tue, 30 Apr 2019 01:01:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/84cb4537-e282-5183-b162-a8534a1f1c97/</guid>
+      <description>/sbin/route add -net 192.168.1.0/16 -interface utun1  MacOS hint: Tunnelblick use utun1 interface</description>
+    </item>
+    
+    <item>
+      <title>netcat File Server</title>
+      <link>https://f9a.github.io/post/uuid/323da666-e4cf-5f1d-a252-1f0ff661de17/</link>
+      <pubDate>Sun, 28 Apr 2019 23:44:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/323da666-e4cf-5f1d-a252-1f0ff661de17/</guid>
+      <description>while true; do { echo -e &#39;HTTP/1.1 200 OK\r\n&#39;; cat Dateiname; } | nc -l 8080; done  </description>
+    </item>
+    
+    <item>
+      <title>Format SD-Card wit fat32 (macOS)</title>
+      <link>https://f9a.github.io/post/uuid/3407fb82-466c-5259-86fb-f39e35e6c22d/</link>
+      <pubDate>Fri, 26 Apr 2019 23:52:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/3407fb82-466c-5259-86fb-f39e35e6c22d/</guid>
+      <description>Be sure sd-card adapter is not locked!
+sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk2  </description>
+    </item>
+    
+    <item>
+      <title>Fail2Ban</title>
+      <link>https://f9a.github.io/post/uuid/d6642509-289f-5194-9048-f65f2efe9914/</link>
+      <pubDate>Wed, 24 Apr 2019 00:25:54 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/d6642509-289f-5194-9048-f65f2efe9914/</guid>
+      <description> Links  https://www.digitalocean.com/community/tutorials/how-fail2ban-works-to-protect-services-on-a-linux-server https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04  </description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://f9a.github.io/post/uuid/d649dda8-6848-52c1-9871-3bb2df5901ec/</link>
+      <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/d649dda8-6848-52c1-9871-3bb2df5901ec/</guid>
+      <description>Cheat Sheet https://i.stack.imgur.com/zpzPO.gif</description>
+    </item>
+    
+    <item>
+      <title>Software Contract Systems</title>
+      <link>https://f9a.github.io/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</link>
+      <pubDate>Mon, 22 Apr 2019 00:20:12 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</guid>
+      <description> Links  https://docs.racket-lang.org/guide/contract-func.html https://www.eiffel.org/doc/eiffel/ET-_Design_by_Contract_%28tm%29%2C_Assertions_and_Exceptions https://clojure.org/guides/spec  </description>
+    </item>
+    
+    <item>
+      <title>GIT</title>
+      <link>https://f9a.github.io/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</link>
+      <pubDate>Sun, 21 Apr 2019 00:18:45 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</guid>
+      <description>Random git commands Tags git show-ref --tags  Stash git stash apply stash@{1}  Reset git reset --merge ORIG_HEAD   &amp;ndash;merge
+Resets the index and updates the files in the working tree that are different between  and HEAD, but keeps those which are different between the index and working tree (i.e. which have changes which have not been added).
+ Links https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
+Show git show -s --format=%ci &amp;lt;commit&amp;gt;  Rebase https://git-scm.</description>
+    </item>
+    
+    <item>
+      <title>Install vncserver ubuntu</title>
+      <link>https://f9a.github.io/post/uuid/99991184-c7d7-5d19-8c1d-a9437e754cbf/</link>
+      <pubDate>Fri, 12 Apr 2019 23:45:18 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/99991184-c7d7-5d19-8c1d-a9437e754cbf/</guid>
+      <description>Sources  https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04 https://wiki.archlinux.org/index.php/TigerVNC https://www.realvnc.com/en/connect/download/viewer/  Connect via ssh ssh -L 5901:127.0.0.1:5901 -C -N -l gitlab-runner 195.201.56.187  Misc display-port and system-port is related the basic port is 5900 + (display-port)</description>
+    </item>
+    
+    <item>
+      <title>Kernel API VFS</title>
+      <link>https://f9a.github.io/post/uuid/fe4ff361-fc0c-5711-8cca-632af0117e9d/</link>
+      <pubDate>Thu, 11 Apr 2019 23:47:32 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/fe4ff361-fc0c-5711-8cca-632af0117e9d/</guid>
+      <description>Links https://www.kernel.org/doc/Documentation/filesystems/proc.txt https://www.kernel.org/doc/Documentation/filesystems/sysfs.txt</description>
+    </item>
+    
+    <item>
+      <title>Zap Snippets</title>
+      <link>https://f9a.github.io/post/uuid/185fdbc6-a530-5da5-9bd3-9d4af9f43ae9/</link>
+      <pubDate>Mon, 01 Apr 2019 00:04:02 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/185fdbc6-a530-5da5-9bd3-9d4af9f43ae9/</guid>
+      <description>func makeFileLogger(logger *zap.Logger, importDir string) (log *zap.Logger) { logFileName := fmt.Sprintf(&amp;quot;errors-%v.log&amp;quot;, time.Now().Format(time.RFC3339)) logFile := filepath.Join(importDir, logFileName) fhErrorLogs, err := os.Create(logFile) if err != nil { logger.Fatal(&amp;quot;Cannot create error log file&amp;quot;, zap.Error(err)) } allPriority := zap.LevelEnablerFunc(func(lvl zapcore.Level) bool { return true }) systemdEncoder := zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig()) fileEncoder := zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig()) systemdWriter := zapcore.Lock(os.Stdout) fileWriter := zapcore.AddSync(fhErrorLogs) core := zapcore.NewTee( zapcore.NewCore(systemdEncoder, systemdWriter, allPriority), zapcore.NewCore(fileEncoder, fileWriter, allPriority), ) return zap.New(core) }  </description>
+    </item>
+    
+    <item>
+      <title>iOS CI Cloud Services</title>
+      <link>https://f9a.github.io/post/uuid/884d431b-3d5d-5466-9145-7d6b85c03321/</link>
+      <pubDate>Sat, 30 Mar 2019 00:26:22 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/884d431b-3d5d-5466-9145-7d6b85c03321/</guid>
+      <description> Provider  https://www.bitrise.io/ https://www.macstadium.com/pricing https://travis-ci.com/ https://nevercode.io/ https://www.buddybuild.com/ (Apple gekauft) https://circleci.com/ https://www.shippable.com/ https://codeship.com/ https://www.jetbrains.com/teamcity  </description>
+    </item>
+    
+    <item>
+      <title>Fix pyenv Error</title>
+      <link>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</link>
+      <pubDate>Tue, 12 Mar 2019 12:45:57 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</guid>
+      <description>Error python-build: use openssl 1.1 from homebrew python-build: use readline from homebrew Downloading Python-3.7.3.tar.xz... -&amp;gt; https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz Installing Python-3.7.3... python-build: use readline from homebrew BUILD FAILED (OS X 10.14.3 using python-build 20180424) Inspect or clean up the working tree at /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490 Results logged to /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490.log Last 10 log lines: File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__main__.py&amp;quot;, line 5, in &amp;lt;module&amp;gt; sys.exit(ensurepip._main()) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 204, in _main default_pip=args.default_pip, File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 117, in _bootstrap return _run_pip(args + [p[0] for p in _PROJECTS], additional_paths) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Linux 2</title>
+      <link>https://f9a.github.io/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</link>
+      <pubDate>Wed, 13 Feb 2019 23:42:03 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</guid>
+      <description>Instance Types https://aws.amazon.com/de/ec2/pricing/on-demand/
+AMI extras amazon-linux-extras
+Find versions [ec2-user ~]$ `**cat /etc/image-id**` image_name=&amp;quot;amzn2-ami-hvm&amp;quot; image_version=&amp;quot;2&amp;quot; image_arch=&amp;quot;x86_64&amp;quot; image_file=&amp;quot;amzn2-ami-hvm-2.0.20180810-x86_64.xfs.gpt&amp;quot; image_stamp=&amp;quot;8008-2abd&amp;quot; image_date=&amp;quot;20180811020321&amp;quot; recipe_name=&amp;quot;amzn2 ami&amp;quot; recipe_id=&amp;quot;c652686a-2415-9819-65fb-4dee-9792-289d-1e2846bd&amp;quot;  [ec2-user ~]$ `**cat /etc/system-release** `Amazon Linux 2  [ec2-user ~]$ `**cat /etc/os-release**` NAME=&amp;quot;Amazon Linux&amp;quot; VERSION=&amp;quot;2&amp;quot; ID=&amp;quot;amzn&amp;quot; ID_LIKE=&amp;quot;centos rhel fedora&amp;quot; VERSION_ID=&amp;quot;2&amp;quot; PRETTY_NAME=&amp;quot;Amazon Linux 2&amp;quot; ANSI_COLOR=&amp;quot;0;33&amp;quot; CPE_NAME=&amp;quot;cpe:2.3:o:amazon:amazon_linux:2&amp;quot; HOME_URL=&amp;quot;https://amazonlinux.com/&amp;quot;  Sicherheits-Updates Sicherheitsupdates werden über die Paket-Repositorys sowie über aktualisierte AMIs bereitgestellt. Sicherheitswarnungen werden im Amazon Linux-Sicherheitszentrum veröffentlicht. Weitere Informationen zu den AWS-Sicherheitsrichtlinien finden Sie im AWS-Sicherheitszentrum; dort können Sie auch ein Sicherheitsproblem melden.</description>
+    </item>
+    
+    <item>
+      <title>Go Blob</title>
+      <link>https://f9a.github.io/post/uuid/47146662-f7e0-54f5-9ed6-9b32db0b7d37/</link>
+      <pubDate>Wed, 23 Jan 2019 22:29:01 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/47146662-f7e0-54f5-9ed6-9b32db0b7d37/</guid>
+      <description>Important package https://github.com/gofrs (uuid)
+HTTP Debug GODEBUG=http2debug=2
+Password prompt Recently I&amp;rsquo;ve been working with an internal Go tool that uses environment variables for accessing user credentials that are being used to authenticate. While I find that very handy, I was wondering how difficult would it be to add the functionality of providing the password manually, but in a safe (non-displaying) way. As it turned out, it cannot be any easier!</description>
+    </item>
+    
+    <item>
+      <title>Vim gocode-server</title>
+      <link>https://f9a.github.io/post/uuid/2dfeff23-65f9-5949-9953-4451e99e012e/</link>
+      <pubDate>Fri, 01 Jun 2018 15:32:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/2dfeff23-65f9-5949-9953-4451e99e012e/</guid>
+      <description>gocode läuft als server im hintergrund
+Kann beendet werden
+$ gocode close  Bei mir kam es nach updates von go-vim machmal zu Problemen. Zum Beispiel wurde in vim nur noch PANIC PANIC PANIC angezeigt. Um herauszufinden welches was gocode für ein Fehler wirft kannes nützlich sein gocode im Vordergrund zu starten
+$ gocode -s  </description>
+    </item>
+    
+    <item>
+      <title>Test Network Errors</title>
+      <link>https://f9a.github.io/post/uuid/9cf20970-a5db-501e-a112-c6b2b5f3975a/</link>
+      <pubDate>Tue, 02 Jan 2018 14:27:02 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/9cf20970-a5db-501e-a112-c6b2b5f3975a/</guid>
+      <description> Links  Verwerfe Zufällig IP Packages - iptables -A INPUT -s  -m statistic &amp;ndash;mode random &amp;ndash;probability 0.1 -j DROP https://wiki.linuxfoundation.org/networking/netem  </description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>https://f9a.github.io/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</link>
+      <pubDate>Sun, 24 Sep 2017 13:22:54 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</guid>
+      <description> Tunning https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
+Konfigurations Parameter https://www.postgresql.org/docs/current/static/runtime-config.html
+Error codes https://www.postgresql.org/docs/9.5/static/errcodes-appendix.html
+Anzeigen von offenen Datenbankverbindungen SELECT * FROM pg_stat_activity;  https://www.postgresql.org/message-id/200404260720.i3Q7KaxE030841%40lurza.secnetix.de
+Kill aktive Verbindungen SELECT pg_terminate_backend(pid int)  Beende alle Verbindungen bis auf die eigene
+SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = &#39;TARGET_DB&#39; AND pid &amp;lt;&amp;gt; pg_backend_pid();  Verzeichnisstruktur mit ltree  http://www.postgresonline.com/journal/archives/173-Using-LTree-to-Represent-and-Query-Hierarchy-and-Tree-Structures.html https://www.postgresql.org/docs/current/static/ltree.html  </description>
+    </item>
+    
+    <item>
+      <title>Unlock linux wlan device</title>
+      <link>https://f9a.github.io/post/uuid/468fbd5a-7d07-5e09-abf2-2693e9095223/</link>
+      <pubDate>Fri, 07 Jul 2017 16:17:49 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/468fbd5a-7d07-5e09-abf2-2693e9095223/</guid>
+      <description>Prüfe ob soft blocked der wlan Karte an ist.
+rfkill list  </description>
+    </item>
+    
+    <item>
+      <title>Network Performance Tests</title>
+      <link>https://f9a.github.io/post/uuid/31278f29-d0db-5f7b-9a8c-f7f8197eb594/</link>
+      <pubDate>Fri, 16 Dec 2016 23:22:10 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/31278f29-d0db-5f7b-9a8c-f7f8197eb594/</guid>
+      <description> Links  go-wrk https://iperf.fr/iperf-download.php  </description>
+    </item>
+    
+    <item>
+      <title>Public-Key-Kryptoverfahren Teil 2</title>
+      <link>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</link>
+      <pubDate>Fri, 09 Sep 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</guid>
+      <description>Kapitel 4 - Diffe-Hellmann-Schlüsselaustausch Einweg Public-Keys
+b^x mod p  Quellen https://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch
+RSA  https://www.emc.com/collateral/white-papers/h11300-pkcs-1v2-2-rsa-cryptography-standard-wp.pdf https://tools.ietf.org/html/rfc3447  TLS RFC2246: https://tools.ietf.org/html/rfc2246
+RSA Ansynchrones Verfahren für Schlüsselautausch
+Verbindungs aufbau Client sendet eine Liste von chiper suits die er beherrscht Server sendet das vom ihm ausgewählte Verfahren an den Client + x.509 Zertifikat. Das erste Zertifikat das übermittelt wird sollte das Server Zertifikat sein zu diesem sollte ein Privat Key auf dem Server existieren</description>
+    </item>
+    
+    <item>
+      <title>Public-Key-Kryptoverfahren Teil 1</title>
+      <link>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</link>
+      <pubDate>Thu, 08 Sep 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</guid>
+      <description>Einleitung Warum schreibe ich diesen Text Es ging mir nicht darum einzelnen Verfahren Technisch zu Beschreiben oder gar erschöfpend zu Beschreiben dazu fehlt mir bei weitem das Wissen. Es ging darum eine Übersicht über die Zusammenhänge zwischen Verfahren und Funktionen zu geben ebenso aufzuzeigen warum diese unterschiedliche Verfahren und Funktionen existieren. Weiter möchte ich anderen die Denkfehler ersparen wie ich sie gemacht. Die ganze Reise began damit das ich nicht verstanden habe warum man zum Erzeugen eines CSR (Certificate Signing Request) ein Private Key benötigt und woher der Public Key darin plötzlich herkamm obwohl ich diesen doch nie explizit erzeugt habe.</description>
+    </item>
+    
+    <item>
       <title>Javascript Wüste! &#39;this&#39; is not the end</title>
       <link>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</link>
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
@@ -32,12 +299,185 @@ git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to 
     </item>
     
     <item>
+      <title>Create Tun/Tap devices</title>
+      <link>https://f9a.github.io/post/uuid/5c8c76d4-b60b-558a-85c2-a88648b86f99/</link>
+      <pubDate>Fri, 01 Apr 2016 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/5c8c76d4-b60b-558a-85c2-a88648b86f99/</guid>
+      <description>$ ip tuntap add name tap0 mode tap $ ip link set up dev tap0  Beachte, das Tun/Tap Device wird erst aktiviert (UP) wenn ein Programm sich mit dem Device verbunden hat. Damit ist nicht gemeint das ein Programm aut der IP Adresse oder ähnliche lauscht.</description>
+    </item>
+    
+    <item>
+      <title>systemd</title>
+      <link>https://f9a.github.io/post/uuid/c774a1f0-14ef-5ca0-905e-7779cae7b5ec/</link>
+      <pubDate>Fri, 15 Jan 2016 22:10:12 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/c774a1f0-14ef-5ca0-905e-7779cae7b5ec/</guid>
+      <description> Links  https://www.loggly.com/blog/why-journald/ https://www.loggly.com/ultimate-guide/linux-logging-with-systemd/ Schreibe logs in journald - http://serverfault.com/questions/573946/how-can-i-log-a-message-to-the-systemd-journal-from-the-command-line  </description>
+    </item>
+    
+    <item>
+      <title>Enable hdmi video &#43; sound</title>
+      <link>https://f9a.github.io/post/uuid/e40afc58-bb77-511b-b5e6-b1e8c9446456/</link>
+      <pubDate>Tue, 05 Jan 2016 01:51:37 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/e40afc58-bb77-511b-b5e6-b1e8c9446456/</guid>
+      <description>Das Ziel ist es Filme mittels Notebook mit dem TV als Ausgabemedium anzuschauen. Zu beantworten gilt es also folgendes, &amp;ldquo;wie verdammt nochmal bekomme ich Bild und Ton über das HDMI Kabel&amp;rdquo;.
+Bild Starten wir mit dem Bild mittels xrandr kann man zwischen Verschieden Videoeingängen hin und her schalten. Mann kann einiges damit anstellen. Für unseres Problem reichen folgende Befehle
+Find die Bezeichnung für den HDMI Ausgang
+xrandr eDP1 connected (normal left inverted right x axis y axis) 1366x768 60.</description>
+    </item>
+    
+    <item>
       <title>node.js</title>
       <link>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</link>
       <pubDate>Thu, 03 Dec 2015 17:04:15 +0100</pubDate>
       
       <guid>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</guid>
       <description>Basics Beschäftigt man sich zum ersten mal mit Node.js fallen schnell Begriffe wie non-blocking, event-driven, async und EventLoop. Dann liest man auf der anderen Seite aber wieder das JavaScript single thread ist also nur ein Befehl nachdem andern ausführen kann. Wie passt das alles zusammen? Zunächst einmal ist es so das wir uns hier im Land der Bits und Bytes befinden das heißt es gibt immer einen weg etwas zum machen wie es nicht vorgesehen ist eine weg um die Idee herum.</description>
+    </item>
+    
+    <item>
+      <title>Python Funktionsparameter</title>
+      <link>https://f9a.github.io/post/uuid/c8873657-143c-5fc5-8f5a-953cfda4aa6a/</link>
+      <pubDate>Fri, 27 Nov 2015 22:19:44 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/c8873657-143c-5fc5-8f5a-953cfda4aa6a/</guid>
+      <description>Es gibt in Python veränderbare Typen und unveränderbare Typen. Lass uns mit den veränderbaren Typen beginnen
+Übergibt man veränderbare Typen wie zum Beispiel eine Liste wird eine Variable übergeben die die Referenz auf die Liste enthält. Das bedeutet verändert man diese Liste über die Variable hat das auswirkungen außerhalb des Funktions scope. Wird jedoch eine neues Objekt an die Variable gebunden verändert das nicht die Variable außerhalb des Funktionsscopes.
+Allgemein speichert Python nur Referenzen auf Objekte in Variablen.</description>
+    </item>
+    
+    <item>
+      <title>Archlinux add ca-certificates</title>
+      <link>https://f9a.github.io/post/uuid/3acce0bc-f4f6-5f90-a4f1-c52bb760e703/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/3acce0bc-f4f6-5f90-a4f1-c52bb760e703/</guid>
+      <description>Damit git, curl, etc. wissen welchen Zertifikaten Sie vertrauen können müssen benötigen Sie eine Liste der zu Vertrauenden CA Zertifikaten. Eine solche Liste kann aus den in Archlinux mitgelieferneden CA Zertifikaten.
+$ trust extract --foramt=pem-bundle ca-certificates.crt  </description>
+    </item>
+    
+    <item>
+      <title>Codec Dschungel</title>
+      <link>https://f9a.github.io/post/uuid/912524f3-946a-53c9-ade0-999bfead0144/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/912524f3-946a-53c9-ade0-999bfead0144/</guid>
+      <description>Lizens OS unterstützung  Mac Linux Windows  URL zum Codec  Da die größe der Datei wesentlich kleiner ist als bei dem alten mpeg4 Dateien könnte man auch gleich Videos in verschiedenen Formaten anbieten.
+H.264 MPEG-4/AVC Nachfolger H.265 Ogg Theora VP8 x264
+H.264 wird Hardwareseitig unterstüzt für besser performance und energiesparen
+WebM Container (Matroska)
+ Audio: OGG Thora Video: VP8 Container: Matroska  Dateiendungen: .mkv ( für Videodaten ) .</description>
+    </item>
+    
+    <item>
+      <title>Fehler beim laden der vbox* Module</title>
+      <link>https://f9a.github.io/post/uuid/9b5533c2-ad3b-5131-910d-2a069a186ed5/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/9b5533c2-ad3b-5131-910d-2a069a186ed5/</guid>
+      <description>Es konnten die vbox module nicht geladen werden.
+Jul 23 18:50:29 euler systemd-modules-load[175]: Inserted module &#39;kvm&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxdrv&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxvideo&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetadp&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetflt&#39; Jul 23 18:50:29 euler systemd[1]: systemd-modules-load.service: main process exited, code=exited, status=1/FAILURE Jul 23 18:50:29 euler systemd[1]: Failed to start Load Kernel Modules.</description>
+    </item>
+    
+    <item>
+      <title>Gewerbe</title>
+      <link>https://f9a.github.io/post/uuid/3ae3f2c7-7561-5a42-a282-b6efb0a2d86d/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/3ae3f2c7-7561-5a42-a282-b6efb0a2d86d/</guid>
+      <description>Steuer Kleingewerbe § 19 UstG
+ Umsatzsteuervoranmeldung Umsatzsteuererklärung Einahme-Überschussrechnugn (EÜR) (Anlage G)
+ Gewerbesteuer ab einem Gewinn von 24.500€/pro Monat
+  Umsatzsteuer &amp;hellip;&amp;hellip;&amp;hellip;&amp;hellip;
+ weniger als 1000€ Ust im Vorjahr -&amp;gt; keine Umsatzsteuervoranmeldung 1000€ bis 7500€ Ust -&amp;gt; 1&amp;frasl;4 Jährlich mehr als 7500€ jeden Monat Bei Erstatung von 7500€ kann gewählt werden ob 1&amp;frasl;4 jährlich oder monatlich
+ Bei Gründung und im darauf folgenden Jahr muss die Ust-Anmeldung monatlich statt finden</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Funktinoiert nicht mit Python3</title>
+      <link>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</guid>
+      <description>jekyll Funktinoiert nicht mit python3
+Pygments Error bei der Installtion von jekyll
+ https://github.com/jekyll/jekyll/issues/1379 https://github.com/tmm1/pygments.rb/issues/45  </description>
+    </item>
+    
+    <item>
+      <title>Linux und Drucker</title>
+      <link>https://f9a.github.io/post/uuid/2b98cacc-e639-5dcf-923f-0892530c49ae/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/2b98cacc-e639-5dcf-923f-0892530c49ae/</guid>
+      <description>CUPS backends /usr/lib/cups/backend
+Zeigt all backens an
+lpinfo -v  Canon cnijfilter-common-i386 ? cnijfilter-mg5200  Suche Drucker
+cnijnetprn --search auto  Drucker anlegen
+sudo /usr/sbin/lpadmin -p canonmg5200 -m canonmg5200.ppd -v cnijnet:/00-1E-8F-67-4C-D8 -E sudo rc.d restart cupsd  Gehe auf http://localhost:631/ Bearbeite den Drucker ohne etwas zu ändern.</description>
+    </item>
+    
+    <item>
+      <title>Modbus</title>
+      <link>https://f9a.github.io/post/uuid/ba77a4de-20f7-5281-bfa4-8a1756d769d3/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/ba77a4de-20f7-5281-bfa4-8a1756d769d3/</guid>
+      <description>connect_id = 1
+Beim setzten des Modbus Registers muss darauf geachtet werden das die Datenbank in der sich das Array befindet in dem Daten abgelegt werden oder aus dem Daten gelesen werden nicht optimized ist. Um diese zu überprüfen kann man in den Eigenschaften der Datenbank nachschauen. Dazu geht man mit der Rechtenmaustaste auf dei Gewünschte Datenbank und müsste dann auf der ersten Seite den richtigen Wert sehen.
+Ebenfalls ist zu beachten das mein beim auswählen des Registers nicht eine Element des Arrays auswählt sonder nur den Pointer das heißt man muss auf das Array klicken und dann &amp;ldquo;keinen Eintrag&amp;rdquo; auswählen.</description>
+    </item>
+    
+    <item>
+      <title>Python syntax sugar</title>
+      <link>https://f9a.github.io/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</guid>
+      <description>In Python ist alles Syntax-Sugar
+&amp;gt;&amp;gt;&amp;gt; l = [] &amp;gt;&amp;gt;&amp;gt; l = list()  &amp;gt;&amp;gt;&amp;gt; class AB: name=&amp;quot;AB&amp;quot;; &amp;gt;&amp;gt;&amp;gt; AB.name &amp;quot;AB&amp;quot; &amp;gt;&amp;gt;&amp;gt; getattr(AB, &amp;quot;name&amp;quot;) &amp;quot;AB&amp;quot; &amp;gt;&amp;gt;&amp;gt; type(AB).__getattribute__(AB, &amp;quot;name&amp;quot;) &amp;quot;AB&amp;quot;  &amp;gt;&amp;gt;&amp;gt; 2**2 4 &amp;gt;&amp;gt;&amp;gt; int(2).__pow__(2) 4  &amp;gt;&amp;gt;&amp;gt; class A(object): def af(self): print &amp;quot;FUNKTION a in Klasse A&amp;quot; &amp;gt;&amp;gt;&amp;gt; a = A() &amp;gt;&amp;gt;&amp;gt; a.af() &amp;quot;FUNKTION a in Klasse A&amp;quot; &amp;gt;&amp;gt;&amp;gt; type(A).__getattribute__(A, &amp;quot;af&amp;quot;)(a) &amp;quot;FUNKTION a in Klasse A&amp;quot;  &amp;gt;&amp;gt;&amp;gt; import types &amp;gt;&amp;gt;&amp;gt; globals &amp;lt;built-in function globals&amp;gt; &amp;gt;&amp;gt;&amp;gt; globals() {&#39;__builtins__&#39;: &amp;lt;module &#39;__builtin__&#39; (built-in)&amp;gt;, &#39;__name__&#39;: &#39;__main__&#39;, &#39;__package__&#39;: None} &amp;gt;&amp;gt;&amp;gt; C = type(&amp;quot;C&amp;quot;, (object,), dict(name=&amp;quot;C&amp;quot;)) &amp;gt;&amp;gt;&amp;gt; globals() {&#39;__builtins__&#39;: &amp;lt;module &#39;__builtin__&#39; (built-in)&amp;gt;, &#39;__name__&#39;: &#39;__main__&#39;, &#39;C&#39;: &amp;lt;class &#39;__main__.</description>
+    </item>
+    
+    <item>
+      <title>Setup network interfaces</title>
+      <link>https://f9a.github.io/post/uuid/d4e5f434-765e-5877-8955-3149a871be10/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/d4e5f434-765e-5877-8955-3149a871be10/</guid>
+      <description>Allgemein # Verschieden Beispiele zur manuellen konfirugartion von Netzwerk-Interfaces $ ip link show dev eth0 $ ip link set eth0 up $ ip link set eth0 down $ ip addr add 192.168.1.2/24 broadcast 192.168.1.255 dev eth0 $ ip route add default via 192.168.1.1 $ resolvconf -a eth0 &amp;lt; tmp_resolv.conf_file  # Scanne nach Wlan-Access-Poits $ iw dev wlan0 scan $ iwlist wlan0 scanning  Chromebook Deaktivier die wlan Verbindung über Chrome Einstellungen WLAN Deaktivieren</description>
+    </item>
+    
+    <item>
+      <title>UEFI</title>
+      <link>https://f9a.github.io/post/uuid/95a902f7-fee4-5003-82a4-80c47a8164ea/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/95a902f7-fee4-5003-82a4-80c47a8164ea/</guid>
+      <description>Man kann nun über UEFI direkt eine EFI Executables starten, so kann man z. Bsp. GRUB los werden. Dazu auf einer Festeplatte, USB-Stick, etc. eine GPT-Schema anlegen und einer Partition, sollte min. 150Mb groß sein, den EFI Type vergeben. Anschließend diese Partion mit fat32 formatieren. Diese Partiton kann nun dazu verwendet werden eine um den Linux-Kernel direkt oder sagen wir direkter zu starten. Dazu muss der Kernel allerdings als EFI BOOT STUB[] kompiliert werden dazu muss CONFIG_EFI_STUB=y gesetzt werden diese ist im Fall von ArchLinux jedoch schon der Standard.</description>
+    </item>
+    
+    <item>
+      <title>ALSA</title>
+      <link>https://f9a.github.io/post/uuid/0a3ef6da-7463-5aec-81bc-b07088f1586d/</link>
+      <pubDate>Thu, 01 May 2014 14:54:06 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/0a3ef6da-7463-5aec-81bc-b07088f1586d/</guid>
+      <description>Benutzer muss in Gruppe audio sein.
+Aktiviere eine Soundcard
+amixer set Master on # Wenn man mehrer Karten hat oder zu sonstigen Problemen kommt kann man probieren ob man mittels -c und vielleicht auch noch -D die Karten und das Device direkt ansprechen kann amixer -c 1 Master on  Informationen über die Soundcards
+cat /proc/asound/cards aplay -l aplay -L  Lautsprecher Testen
+speaker-test -D hw:1,3 -c 2  Dabei besteht die einfache Möglichkeit die Kanalanzahl zu übergeben (-c 2).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://f9a.github.io/blobs/haproxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://f9a.github.io/blobs/haproxy/</guid>
+      <description>haproxy Benutzerverwaltung Möchte man das nur bestimmte Benutzer Zugang auf ein vom HAProxy verwaltetes Backend haben. Kann man dies unterandem über die HTTP Basic Authentication handhaben. Die Standard Lösung wäre userlist zu verwenden das funktioniert prima bis zu einer besimmten Anzahl von Benutzern. Da man für jeden neu hinzugefügten/entferneten Benutzer haproxy neustarten muss und das ziemlich lang dauert zu Problemen führen. Daher kann man alternative mittels Lua Script das ganze ncoh aufbohren.</description>
     </item>
     
   </channel>

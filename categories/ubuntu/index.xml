@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on Pensieve</title>
+    <link>https://f9a.github.io/categories/ubuntu/</link>
+    <description>Recent content in ubuntu on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Fri, 12 Apr 2019 23:45:18 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install vncserver ubuntu</title>
+      <link>https://f9a.github.io/post/uuid/99991184-c7d7-5d19-8c1d-a9437e754cbf/</link>
+      <pubDate>Fri, 12 Apr 2019 23:45:18 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/99991184-c7d7-5d19-8c1d-a9437e754cbf/</guid>
+      <description>Sources  https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04 https://wiki.archlinux.org/index.php/TigerVNC https://www.realvnc.com/en/connect/download/viewer/  Connect via ssh ssh -L 5901:127.0.0.1:5901 -C -N -l gitlab-runner 195.201.56.187  Misc display-port and system-port is related the basic port is 5900 + (display-port)</description>
+    </item>
+    
+  </channel>
+</rss>

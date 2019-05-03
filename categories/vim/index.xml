@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Pensieve</title>
+    <link>https://f9a.github.io/categories/vim/</link>
+    <description>Recent content in vim on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 23 Apr 2019 00:22:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim</title>
+      <link>https://f9a.github.io/post/uuid/d649dda8-6848-52c1-9871-3bb2df5901ec/</link>
+      <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/d649dda8-6848-52c1-9871-3bb2df5901ec/</guid>
+      <description>Cheat Sheet https://i.stack.imgur.com/zpzPO.gif</description>
+    </item>
+    
+    <item>
+      <title>Vim gocode-server</title>
+      <link>https://f9a.github.io/post/uuid/2dfeff23-65f9-5949-9953-4451e99e012e/</link>
+      <pubDate>Fri, 01 Jun 2018 15:32:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/2dfeff23-65f9-5949-9953-4451e99e012e/</guid>
+      <description>gocode läuft als server im hintergrund
+Kann beendet werden
+$ gocode close  Bei mir kam es nach updates von go-vim machmal zu Problemen. Zum Beispiel wurde in vim nur noch PANIC PANIC PANIC angezeigt. Um herauszufinden welches was gocode für ein Fehler wirft kannes nützlich sein gocode im Vordergrund zu starten
+$ gocode -s  </description>
+    </item>
+    
+  </channel>
+</rss>

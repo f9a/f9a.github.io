@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Pensieve</title>
+    <link>https://f9a.github.io/categories/python/</link>
+    <description>Recent content in python on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 12 Mar 2019 12:45:57 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fix pyenv Error</title>
+      <link>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</link>
+      <pubDate>Tue, 12 Mar 2019 12:45:57 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</guid>
+      <description>Error python-build: use openssl 1.1 from homebrew python-build: use readline from homebrew Downloading Python-3.7.3.tar.xz... -&amp;gt; https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz Installing Python-3.7.3... python-build: use readline from homebrew BUILD FAILED (OS X 10.14.3 using python-build 20180424) Inspect or clean up the working tree at /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490 Results logged to /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490.log Last 10 log lines: File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__main__.py&amp;quot;, line 5, in &amp;lt;module&amp;gt; sys.exit(ensurepip._main()) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 204, in _main default_pip=args.default_pip, File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 117, in _bootstrap return _run_pip(args + [p[0] for p in _PROJECTS], additional_paths) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.</description>
+    </item>
+    
+    <item>
+      <title>Python Funktionsparameter</title>
+      <link>https://f9a.github.io/post/uuid/c8873657-143c-5fc5-8f5a-953cfda4aa6a/</link>
+      <pubDate>Fri, 27 Nov 2015 22:19:44 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/c8873657-143c-5fc5-8f5a-953cfda4aa6a/</guid>
+      <description>Es gibt in Python veränderbare Typen und unveränderbare Typen. Lass uns mit den veränderbaren Typen beginnen
+Übergibt man veränderbare Typen wie zum Beispiel eine Liste wird eine Variable übergeben die die Referenz auf die Liste enthält. Das bedeutet verändert man diese Liste über die Variable hat das auswirkungen außerhalb des Funktions scope. Wird jedoch eine neues Objekt an die Variable gebunden verändert das nicht die Variable außerhalb des Funktionsscopes.
+Allgemein speichert Python nur Referenzen auf Objekte in Variablen.</description>
+    </item>
+    
+    <item>
+      <title>Jekyll Funktinoiert nicht mit Python3</title>
+      <link>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</guid>
+      <description>jekyll Funktinoiert nicht mit python3
+Pygments Error bei der Installtion von jekyll
+ https://github.com/jekyll/jekyll/issues/1379 https://github.com/tmm1/pygments.rb/issues/45  </description>
+    </item>
+    
+  </channel>
+</rss>

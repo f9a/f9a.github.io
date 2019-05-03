@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtualbox on Pensieve</title>
+    <link>https://f9a.github.io/categories/virtualbox/</link>
+    <description>Recent content in virtualbox on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Wed, 25 Nov 2015 09:07:27 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fehler beim laden der vbox* Module</title>
+      <link>https://f9a.github.io/post/uuid/9b5533c2-ad3b-5131-910d-2a069a186ed5/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/9b5533c2-ad3b-5131-910d-2a069a186ed5/</guid>
+      <description>Es konnten die vbox module nicht geladen werden.
+Jul 23 18:50:29 euler systemd-modules-load[175]: Inserted module &#39;kvm&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxdrv&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxvideo&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetadp&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetflt&#39; Jul 23 18:50:29 euler systemd[1]: systemd-modules-load.service: main process exited, code=exited, status=1/FAILURE Jul 23 18:50:29 euler systemd[1]: Failed to start Load Kernel Modules.</description>
+    </item>
+    
+  </channel>
+</rss>

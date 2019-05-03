@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fehler beim laden der vbox* Module &middot; Mr. Hash</title>
+        <meta name="description" content="Es konnten die vbox module nicht geladen werden.
+Jul 23 18:50:29 euler systemd-modules-load[175]: Inserted module &#39;kvm&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxdrv&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxvideo&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetadp&#39; Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module &#39;vboxnetflt&#39; Jul 23 18:50:29 euler systemd[1]: systemd-modules-load.service: main process exited, code=exited, status=1/FAILURE Jul 23 18:50:29 euler systemd[1]: Failed to start Load Kernel Modules.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://f9a.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://f9a.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">Fehler beim laden der vbox* Module</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    <p>Es konnten die vbox module nicht geladen werden.</p>
+
+<pre><code>Jul 23 18:50:29 euler systemd-modules-load[175]: Inserted module 'kvm'
+Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module 'vboxdrv'
+Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module 'vboxvideo'
+Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module 'vboxnetadp'
+Jul 23 18:50:29 euler systemd-modules-load[175]: Failed to find module 'vboxnetflt'
+Jul 23 18:50:29 euler systemd[1]: systemd-modules-load.service: main process exited, code=exited, status=1/FAILURE
+Jul 23 18:50:29 euler systemd[1]: Failed to start Load Kernel Modules.
+</code></pre>
+
+<p>Wie man unten sieht befinden diese sich in dem extramodules Verzeichnis und sind abhängig von bestimmten anden module.</p>
+
+<pre><code class="language-bash">[wirrwarr@euler modules]$ ls -l 3.15.5-2-ARCH/
+insgesamt 3908
+drwxr-xr-x  3 root root   4096 23. Jul 18:27 build
+lrwxrwxrwx  1 root root     25 11. Jul 07:59 extramodules -&gt; ../extramodules-3.15-ARCH
+</code></pre>
+
+<pre><code class="language-bash">[wirrwarr@euler modules]$ sudo ls -l /lib/modules/extramodules-3.15-ARCH/
+insgesamt 316
+-rw-r--r-- 1 root root 143082 16. Jul 22:48 vboxdrv.ko.gz
+-rw-r--r-- 1 root root 106971 16. Jul 22:48 vboxguest.ko.gz
+-rw-r--r-- 1 root root   4303 16. Jul 22:48 vboxnetadp.ko.gz
+-rw-r--r-- 1 root root  12587 16. Jul 22:48 vboxnetflt.ko.gz
+-rw-r--r-- 1 root root  10479 16. Jul 22:48 vboxpci.ko.gz
+-rw-r--r-- 1 root root  21436 16. Jul 22:48 vboxsf.ko.gz
+-rw-r--r-- 1 root root   1536 16. Jul 22:48 vboxvideo.ko.gz
+</code></pre>
+
+<p>Um alle Module korrekt laden zu können muss folgender Befehl ausgeführt werden.</p>
+
+<pre><code class="language-bash">[wirrwarr@euler modules]$ depmod -a
+</code></pre>
+
+<p>Erzeugt alle Abhänigkeiten und trägt diese in Datei /lib/modules/<Kernelversion>/modules.dep ein.
+Da per default der Ordner /lib/modules/<Kernelversion/kernel von modprobe nach Modulen durchsucht wird fällt das Verzeichnis /lib/modules/<Kernelversion>/extramodules nicht unter die durchsuchten Verzeichnisse. Allerdings verwendet modprobe die modules.dep Datei und da dort die vbox* Module drin stehen nachdem das depmod -a command ausgeführt wurde können diese gefunden werden.</p>
+
+<p>Depmode benutze alle Verzeichnis unter /lib/modules/<Kernelversion> um die modules.dep Datei zu erstellen.</p>
+
+<p>This file is used by modprobe to know the order in which to load modules (they are loaded right to left, and removed left to right).</p>
+
+<p>Auszug aus Datei:</p>
+
+<pre><code>extramodules/vboxsf.ko.gz: extramodules/vboxguest.ko.gz
+extramodules/vboxnetflt.ko.gz: extramodules/vboxdrv.ko.gz
+extramodules/vboxvideo.ko.gz: kernel/drivers/gpu/drm/drm.ko.gz kernel/drivers/i2c/i2c-core.ko.gz
+extramodules/vboxnetadp.ko.gz: extramodules/vboxdrv.ko.gz
+extramodules/vboxguest.ko.gz:
+extramodules/vboxpci.ko.gz: extramodules/vboxdrv.ko.gz
+extramodules/vboxdrv.ko.gz
+</code></pre>
+
+<p>Ein weiter Programm um Module zu verwlaten ist kmod (Archlinux erstatz für module-init-tools)</p>
+
+<p>Quelle
+<a href="http://wiki.ubuntuusers.de/Kernelmodule">http://wiki.ubuntuusers.de/Kernelmodule</a></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Fehler%20beim%20laden%20der%20vbox%2a%20Module&url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f9b5533c2-ad3b-5131-910d-2a069a186ed5%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f9b5533c2-ad3b-5131-910d-2a069a186ed5%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f9b5533c2-ad3b-5131-910d-2a069a186ed5%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://f9a.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://f9a.github.io/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://f9a.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

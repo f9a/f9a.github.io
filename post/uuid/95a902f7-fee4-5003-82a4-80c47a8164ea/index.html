@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UEFI &middot; Mr. Hash</title>
+        <meta name="description" content="Man kann nun über UEFI direkt eine EFI Executables starten, so kann man z. Bsp. GRUB los werden. Dazu auf einer Festeplatte, USB-Stick, etc. eine GPT-Schema anlegen und einer Partition, sollte min. 150Mb groß sein, den EFI Type vergeben. Anschließend diese Partion mit fat32 formatieren. Diese Partiton kann nun dazu verwendet werden eine um den Linux-Kernel direkt oder sagen wir direkter zu starten. Dazu muss der Kernel allerdings als EFI BOOT STUB[] kompiliert werden dazu muss CONFIG_EFI_STUB=y gesetzt werden diese ist im Fall von ArchLinux jedoch schon der Standard.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://f9a.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://f9a.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">UEFI</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    <p>Man kann nun über UEFI direkt eine EFI Executables starten, so kann man z. Bsp. GRUB los werden.
+Dazu auf einer Festeplatte, USB-Stick, etc. eine GPT-Schema anlegen und einer Partition, sollte min. 150Mb groß sein,
+den EFI Type vergeben. Anschließend diese Partion mit fat32 formatieren.
+Diese Partiton kann nun dazu verwendet werden eine um den Linux-Kernel direkt oder sagen wir direkter zu starten.
+Dazu muss der Kernel allerdings als EFI BOOT STUB[<em>] kompiliert werden dazu muss CONFIG_EFI_STUB=y gesetzt werden diese ist im Fall von ArchLinux jedoch schon der Standard.
+Möchte man nun direkt ein Kernel über denn UEFI Bootmanager starten kann man mittels efibootmgr einen neuen Eintrag im UEFI Bootmanager anlegen [</em>].
+Alternative kann man mittels bootctl auf der EFI Partition einen Simple UEFI Bootmanager anlegen um so unterschiedliche Kernel zu laden z.Bsp. unter ArchLinux den Fallback-Kernel zu starten [*].</p>
+
+<p>_) <a href="https://wiki.archlinux.org/index.php/EFISTUB">https://wiki.archlinux.org/index.php/EFISTUB</a>
+_) <a href="https://wiki.archlinux.de/title/UEFI_Installation">https://wiki.archlinux.de/title/UEFI_Installation</a></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=UEFI&url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f95a902f7-fee4-5003-82a4-80c47a8164ea%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f95a902f7-fee4-5003-82a4-80c47a8164ea%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f95a902f7-fee4-5003-82a4-80c47a8164ea%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://f9a.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://f9a.github.io/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://f9a.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

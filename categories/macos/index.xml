@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macos on Pensieve</title>
+    <link>https://f9a.github.io/categories/macos/</link>
+    <description>Recent content in macos on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 30 Apr 2019 01:01:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Route Specific Network Traffic Over VPN</title>
+      <link>https://f9a.github.io/post/uuid/84cb4537-e282-5183-b162-a8534a1f1c97/</link>
+      <pubDate>Tue, 30 Apr 2019 01:01:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/84cb4537-e282-5183-b162-a8534a1f1c97/</guid>
+      <description>/sbin/route add -net 192.168.1.0/16 -interface utun1  MacOS hint: Tunnelblick use utun1 interface</description>
+    </item>
+    
+    <item>
+      <title>Format SD-Card wit fat32 (macOS)</title>
+      <link>https://f9a.github.io/post/uuid/3407fb82-466c-5259-86fb-f39e35e6c22d/</link>
+      <pubDate>Fri, 26 Apr 2019 23:52:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/3407fb82-466c-5259-86fb-f39e35e6c22d/</guid>
+      <description>Be sure sd-card adapter is not locked!
+sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk2  </description>
+    </item>
+    
+    <item>
+      <title>Fix pyenv Error</title>
+      <link>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</link>
+      <pubDate>Tue, 12 Mar 2019 12:45:57 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/58715ca0-4e5c-58e0-8601-74f4888392dd/</guid>
+      <description>Error python-build: use openssl 1.1 from homebrew python-build: use readline from homebrew Downloading Python-3.7.3.tar.xz... -&amp;gt; https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz Installing Python-3.7.3... python-build: use readline from homebrew BUILD FAILED (OS X 10.14.3 using python-build 20180424) Inspect or clean up the working tree at /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490 Results logged to /var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490.log Last 10 log lines: File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__main__.py&amp;quot;, line 5, in &amp;lt;module&amp;gt; sys.exit(ensurepip._main()) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 204, in _main default_pip=args.default_pip, File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.20190410174719.88490/Python-3.7.3/Lib/ensurepip/__init__.py&amp;quot;, line 117, in _bootstrap return _run_pip(args + [p[0] for p in _PROJECTS], additional_paths) File &amp;quot;/private/var/folders/jn/h5x2wj7j04d1sdtdjcxltf4h0000gn/T/python-build.</description>
+    </item>
+    
+  </channel>
+</rss>

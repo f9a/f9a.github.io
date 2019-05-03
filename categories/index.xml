@@ -6,9 +6,226 @@
     <description>Recent content in Categories on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://f9a.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cypto</title>
+      <link>https://f9a.github.io/categories/cypto/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/cypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://f9a.github.io/categories/go/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://f9a.github.io/categories/linux/</link>
+      <pubDate>Tue, 30 Apr 2019 01:01:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macos</title>
+      <link>https://f9a.github.io/categories/macos/</link>
+      <pubDate>Tue, 30 Apr 2019 01:01:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netcat</title>
+      <link>https://f9a.github.io/categories/netcat/</link>
+      <pubDate>Sun, 28 Apr 2019 23:44:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/netcat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://f9a.github.io/categories/vim/</link>
+      <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://f9a.github.io/categories/code/</link>
+      <pubDate>Mon, 22 Apr 2019 00:20:12 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://f9a.github.io/categories/git/</link>
+      <pubDate>Sun, 21 Apr 2019 00:18:45 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://f9a.github.io/categories/ubuntu/</link>
+      <pubDate>Fri, 12 Apr 2019 23:45:18 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://f9a.github.io/categories/python/</link>
+      <pubDate>Tue, 12 Mar 2019 12:45:57 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aws</title>
+      <link>https://f9a.github.io/categories/aws/</link>
+      <pubDate>Wed, 13 Feb 2019 23:42:03 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>errors</title>
+      <link>https://f9a.github.io/categories/errors/</link>
+      <pubDate>Fri, 01 Jun 2018 15:32:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/errors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gocode</title>
+      <link>https://f9a.github.io/categories/gocode/</link>
+      <pubDate>Fri, 01 Jun 2018 15:32:43 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/gocode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgresql</title>
+      <link>https://f9a.github.io/categories/postgresql/</link>
+      <pubDate>Sun, 24 Sep 2017 13:22:54 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>error</title>
+      <link>https://f9a.github.io/categories/error/</link>
+      <pubDate>Fri, 07 Jul 2017 16:17:49 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crypto</title>
+      <link>https://f9a.github.io/categories/crypto/</link>
+      <pubDate>Fri, 09 Sep 2016 00:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://f9a.github.io/categories/javascript/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://f9a.github.io/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>systemd</title>
+      <link>https://f9a.github.io/categories/systemd/</link>
+      <pubDate>Fri, 15 Jan 2016 22:10:12 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/systemd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://f9a.github.io/categories/nodejs/</link>
+      <pubDate>Thu, 03 Dec 2015 17:04:15 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>archlinux</title>
+      <link>https://f9a.github.io/categories/archlinux/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cups</title>
+      <link>https://f9a.github.io/categories/cups/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/cups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll</title>
+      <link>https://f9a.github.io/categories/jekyll/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualbox</title>
+      <link>https://f9a.github.io/categories/virtualbox/</link>
+      <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/virtualbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alsa</title>
+      <link>https://f9a.github.io/categories/alsa/</link>
+      <pubDate>Thu, 01 May 2014 14:54:06 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/categories/alsa/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

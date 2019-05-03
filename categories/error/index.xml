@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>error on Pensieve</title>
+    <link>https://f9a.github.io/categories/error/</link>
+    <description>Recent content in error on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Fri, 07 Jul 2017 16:17:49 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/error/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unlock linux wlan device</title>
+      <link>https://f9a.github.io/post/uuid/468fbd5a-7d07-5e09-abf2-2693e9095223/</link>
+      <pubDate>Fri, 07 Jul 2017 16:17:49 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/468fbd5a-7d07-5e09-abf2-2693e9095223/</guid>
+      <description>Prüfe ob soft blocked der wlan Karte an ist.
+rfkill list  </description>
+    </item>
+    
+  </channel>
+</rss>

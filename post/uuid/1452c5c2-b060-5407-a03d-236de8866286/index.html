@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OpenSSl &middot; Mr. Hash</title>
+        <meta name="description" content="Zertifikat mit SNI Feldern SNI: Server Name Indication ist eine Erweiterung des x.509 Standards. Wann benötigt man diese Felder? Benutzt man zum Beispiel den golang http-client und baut eine Verbindung zu einem https Server auf überprüft ob der im Feld subjectAltName angegebene Wert mit dem host in der URL übereinstimmt.
+Bekommt man von einem Programm denn Error &ldquo;Failed to tls handshake with x.x.x.x x509: cannot validate certificate for x.x.x.x because it doesn&rsquo;t contain any IP SANs&rdquo; gezeigt heißt in diesem Fall das das Zertifikat keine subjectAltName hinterlegt hat.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://f9a.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://f9a.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">OpenSSl</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    
+
+<h2 id="zertifikat-mit-sni-feldern">Zertifikat mit SNI Feldern</h2>
+
+<p>SNI: Server Name Indication ist eine Erweiterung des x.509 Standards. Wann benötigt man diese Felder? Benutzt man zum Beispiel den golang http-client und baut eine Verbindung zu einem https Server auf überprüft ob der im Feld subjectAltName angegebene Wert mit dem host in der URL übereinstimmt.</p>
+
+<p>Bekommt man von einem Programm denn Error &ldquo;Failed to tls handshake with x.x.x.x x509: cannot validate certificate for x.x.x.x because it doesn&rsquo;t contain any IP SANs&rdquo; gezeigt heißt in diesem Fall das das Zertifikat keine subjectAltName hinterlegt hat.</p>
+
+<p>Es gibt zwei Felder in dennen der Host hinterlegt sein sollte CommanName und in subjectAltName.</p>
+
+<p>Gibt eine IP Adresse im subjectAltName an hat diese das folgende Format IP:XXX.XXX.XXX.XXX möchte man eine Domain angeben dann benutzt man DNS:domain.com es gibt noch weiter möglichkeiten z. Bsp. um mehrer IP-Adressen oder Domains anzugeben.</p>
+
+<p>Beim erzugen der CSR und des Zertifikats muss nun die Konfigurations Datei angegeben werden ebenso muss openssl mitgeteilt werden das eine extension verwendet werden soll</p>
+
+<p>Wir sind nun wieder bei einem Beispiel angekommen das heißt es ist wieder Elliot time.</p>
+
+<p>Elliot gönnt seinem Blog ein Zertifikat mit SNI Feldern damit auch der Panonidste http client das Zertifikat akzeptiert.</p>
+
+<p>Dazu benötigen wir folgende Konfigurations Datei (openssl.cnf)</p>
+
+<pre><code>[ req ]
+default_bits       = 4096
+default_md         = sha512
+prompt             = no
+
+distinguished_name = req_distinguished_name
+
+req_extensions     = v3_req
+
+[ req_distinguished_name ]
+countryName            = &quot;USA&quot;
+stateOrProvinceName    = &quot;New York&quot;
+localityName           = &quot;Brooklyn&quot;
+postalCode             = &quot;&quot;
+streetAddress          = &quot;Straße3027 West 12th Street &quot;
+organizationName       = &quot;fsociety&quot;
+organizationalUnitName = &quot;Dark Army&quot;
+commonName             = &quot;r1ng0.311iot.com&quot;
+emailAddress           = &quot;e@corp.com&quot;
+
+[ v3_req ]
+subjectAltName  = DNS:r1ng0.3lliot.com
+</code></pre>
+
+<p>Erstelle neuen Certificate-Sign-Request, blog-server.key.pem muss Private- und Public-Key enthalten.</p>
+
+<pre><code class="language-bash">$ openssl req -new -x509 -extensions v3_req -key blog-server.key.pem -out blog-server.csr -config openssl.cnf
+</code></pre>
+
+<p>Möchte man nochmals sichergehen das auch alle Daten im CSR enthalten sind kann der folgende Befehl abhilfe bringen</p>
+
+<pre><code class="language-bash">$ openssl req -text -in blog-server.key.pem
+[...]
+        Attributes:
+        Requested Extensions:
+            X509v3 Subject Alternative Name:
+                DNS:r1ng0.3lliot.com
+[...]
+</code></pre>
+
+<p>Findet sich in der Ausgabe X509v3 Subject Alternative Name passt alles.</p>
+
+<p>Die Mr. Robot CA kann den CSR nun signieren, natrülich nach dem Sie überprüft hat ob Elliot auch der Rechtmäßige Besitzer des Servers und der Domain ist.</p>
+
+<pre><code class="language-bash">$ openssl x509 -CAkey mrrobot-ca-private.key.pem -days 365 -in blog-server.csr -out blog-server.cert.pem
+</code></pre>
+
+<p>Auch hier kann man überprüfen ob die benötigen Felder vorhanden sind.</p>
+
+<pre><code class="language-bash">$ openssl x509 -text -in blog-server.cert.pem
+[...]
+        X509v3 extensions:
+            X509v3 Subject Alternative Name:
+                DNS:r1ng0.3lliot.com
+[...]
+</code></pre>
+
+<p>Done!</p>
+
+<h3 id="quellen">Quellen</h3>
+
+<ul>
+<li><a href="https://www.prshanmu.com/2009/03/generating-ssl-certificates-with-x509v3-extensions.html">https://www.prshanmu.com/2009/03/generating-ssl-certificates-with-x509v3-extensions.html</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Server_Name_Indication">https://en.wikipedia.org/wiki/Server_Name_Indication</a></li>
+<li><a href="http://wiki.cacert.org/FAQ/subjectAltName">http://wiki.cacert.org/FAQ/subjectAltName</a></li>
+<li><a href="https://www.openssl.org/docs/manmaster/apps/x509v3_config.html">https://www.openssl.org/docs/manmaster/apps/x509v3_config.html</a></li>
+</ul>
+
+<h2 id="prüfe-ob-eine-ca-der-herausgeber-eines-zertifikats-ist">Prüfe ob eine CA der Herausgeber eines Zertifikats ist</h2>
+
+<pre><code class="language-bash">$ openssl verify -verbose -CAfile cacert.pem  server.crt
+</code></pre>
+
+<h2 id="asn-1">asn.1</h2>
+
+<p>Es kommt machmal vor das in RFC der Begriff asn.1 auftaucht. Diese ist eine Beschreibungsprache um Daten Strukturen zu beschreiben. Steht aber sonst in keinem Zusammenhang mit Verschlüsslung/Signieren/TLS</p>
+
+<p><a href="https://de.wikipedia.org/wiki/Abstract_Syntax_Notation_One">https://de.wikipedia.org/wiki/Abstract_Syntax_Notation_One</a></p>
+
+<h1 id="openssl">OpenSSL</h1>
+
+<h2 id="hinweise">Hinweise</h2>
+
+<p>Erzeugt ein Private-Key und ein Public-Key beide gespeichert in mykey.pem</p>
+
+<pre><code class="language-bash">openssl genrsa -out mykey.pem 1024
+</code></pre>
+
+<p>Liste den Public-Key aus mykey.pub dieser wird nicht nachträglich erzeugt das ist natürlich gegen die Idee des Verfahren. Es sind beide Schlüssel in der Datei mykey.pem</p>
+
+<pre><code class="language-bash">openssl rsa -in mykey.pem -pubout &gt; mykey.pub
+</code></pre>
+
+<h2 id="übersichten-zu-openssl-befehlen">Übersichten zu OpenSSL Befehlen</h2>
+
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs">https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs</a></li>
+<li><a href="http://ngs.ac.uk/ukca/certificates/advanced">http://ngs.ac.uk/ukca/certificates/advanced</a></li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/openssl/">openssl</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=OpenSSl&url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f1452c5c2-b060-5407-a03d-236de8866286%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f1452c5c2-b060-5407-a03d-236de8866286%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f1452c5c2-b060-5407-a03d-236de8866286%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://f9a.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://f9a.github.io/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://f9a.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

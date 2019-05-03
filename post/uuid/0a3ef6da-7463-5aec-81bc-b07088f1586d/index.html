@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ALSA &middot; Mr. Hash</title>
+        <meta name="description" content="Benutzer muss in Gruppe audio sein.
+Aktiviere eine Soundcard
+amixer set Master on # Wenn man mehrer Karten hat oder zu sonstigen Problemen kommt kann man probieren ob man mittels -c und vielleicht auch noch -D die Karten und das Device direkt ansprechen kann amixer -c 1 Master on  Informationen über die Soundcards
+cat /proc/asound/cards aplay -l aplay -L  Lautsprecher Testen
+speaker-test -D hw:1,3 -c 2  Dabei besteht die einfache Möglichkeit die Kanalanzahl zu übergeben (-c 2).">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://f9a.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://f9a.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">ALSA</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    
+
+<p><em>Benutzer muss in Gruppe audio sein.</em></p>
+
+<p>Aktiviere eine Soundcard</p>
+
+<pre><code class="language-bash">amixer set Master on
+# Wenn man mehrer Karten hat oder zu sonstigen Problemen kommt kann man probieren ob man mittels -c und vielleicht auch noch -D die Karten und das Device direkt ansprechen kann
+amixer -c 1 Master on
+</code></pre>
+
+<p>Informationen über die Soundcards</p>
+
+<pre><code class="language-bash">cat /proc/asound/cards
+aplay -l
+aplay -L
+</code></pre>
+
+<p>Lautsprecher Testen</p>
+
+<pre><code class="language-bash">speaker-test -D hw:1,3 -c 2
+</code></pre>
+
+<p>Dabei besteht die einfache Möglichkeit die Kanalanzahl zu übergeben (-c 2). Interessant bei folgender Fehler</p>
+
+<pre><code>aplay: set_params:1239: Kanalanzahl nicht unterstützt
+</code></pre>
+
+<p>so kann getestet werden welche Kanalzahl die Richtig ist</p>
+
+<h2 id="hp-probook-640-g1">HP ProBook 640 G1</h2>
+
+<p>Eine Möglichkeit ist Soundcarde zu konfigurieren ist unter <a href="https://wiki.ubuntuusers.de/.asoundrc/">https://wiki.ubuntuusers.de/.asoundrc/</a> die .asoundrc Konfiguration unter dem Punkt Stereo in .asoundrc zu kopieren und die Card/Device Parameter anzupassen siehe dazu Informationen Soundcards</p>
+
+<p>Quellen:
+_) <a href="https://wiki.archlinux.de/title/Alsa">https://wiki.archlinux.de/title/Alsa</a>
+_) <a href="https://wiki.ubuntuusers.de/.asoundrc/">https://wiki.ubuntuusers.de/.asoundrc/</a>
+_) <a href="http://www.alsa-project.org/main/index.php/Asoundrc">http://www.alsa-project.org/main/index.php/Asoundrc</a>
+_) <a href="http://www.alsa-project.org/alsa-doc/alsa-lib/pcm_plugins.html">http://www.alsa-project.org/alsa-doc/alsa-lib/pcm_plugins.html</a>
+*) <a href="https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture">https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture</a></p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=ALSA&url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f0a3ef6da-7463-5aec-81bc-b07088f1586d%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f0a3ef6da-7463-5aec-81bc-b07088f1586d%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f0a3ef6da-7463-5aec-81bc-b07088f1586d%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://f9a.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://f9a.github.io/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://f9a.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

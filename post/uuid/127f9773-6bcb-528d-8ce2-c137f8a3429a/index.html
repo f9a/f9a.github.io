@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PostgreSQL &middot; Mr. Hash</title>
+        <meta name="description" content=" Tunning https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
+Konfigurations Parameter https://www.postgresql.org/docs/current/static/runtime-config.html
+Error codes https://www.postgresql.org/docs/9.5/static/errcodes-appendix.html
+Anzeigen von offenen Datenbankverbindungen SELECT * FROM pg_stat_activity;  https://www.postgresql.org/message-id/200404260720.i3Q7KaxE030841%40lurza.secnetix.de
+Kill aktive Verbindungen SELECT pg_terminate_backend(pid int)  Beende alle Verbindungen bis auf die eigene
+SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = &#39;TARGET_DB&#39; AND pid &lt;&gt; pg_backend_pid();  Verzeichnisstruktur mit ltree  http://www.postgresonline.com/journal/archives/173-Using-LTree-to-Represent-and-Query-Hierarchy-and-Tree-Structures.html https://www.postgresql.org/docs/current/static/ltree.html  ">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://f9a.github.io/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://f9a.github.io/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">PostgreSQL</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    
+
+<h2 id="tunning">Tunning</h2>
+
+<p><a href="https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server">https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server</a></p>
+
+<h2 id="konfigurations-parameter">Konfigurations Parameter</h2>
+
+<p><a href="https://www.postgresql.org/docs/current/static/runtime-config.html">https://www.postgresql.org/docs/current/static/runtime-config.html</a></p>
+
+<h2 id="error-codes">Error codes</h2>
+
+<p><a href="https://www.postgresql.org/docs/9.5/static/errcodes-appendix.html">https://www.postgresql.org/docs/9.5/static/errcodes-appendix.html</a></p>
+
+<h2 id="anzeigen-von-offenen-datenbankverbindungen">Anzeigen von offenen Datenbankverbindungen</h2>
+
+<pre><code class="language-sql">SELECT * FROM pg_stat_activity;
+</code></pre>
+
+<p><a href="https://www.postgresql.org/message-id/200404260720.i3Q7KaxE030841%40lurza.secnetix.de">https://www.postgresql.org/message-id/200404260720.i3Q7KaxE030841%40lurza.secnetix.de</a></p>
+
+<h2 id="kill-aktive-verbindungen">Kill aktive Verbindungen</h2>
+
+<pre><code class="language-sql">SELECT pg_terminate_backend(pid int)
+</code></pre>
+
+<p>Beende alle Verbindungen bis auf die eigene</p>
+
+<pre><code class="language-sql">SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'TARGET_DB'
+  AND pid &lt;&gt; pg_backend_pid();
+</code></pre>
+
+<h2 id="verzeichnisstruktur-mit-ltree">Verzeichnisstruktur mit ltree</h2>
+
+<ul>
+<li><a href="http://www.postgresonline.com/journal/archives/173-Using-LTree-to-Represent-and-Query-Hierarchy-and-Tree-Structures.html">http://www.postgresonline.com/journal/archives/173-Using-LTree-to-Represent-and-Query-Hierarchy-and-Tree-Structures.html</a></li>
+<li><a href="https://www.postgresql.org/docs/current/static/ltree.html">https://www.postgresql.org/docs/current/static/ltree.html</a></li>
+</ul>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=PostgreSQL&url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f127f9773-6bcb-528d-8ce2-c137f8a3429a%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f127f9773-6bcb-528d-8ce2-c137f8a3429a%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2ff9a.github.io%2fpost%2fuuid%2f127f9773-6bcb-528d-8ce2-c137f8a3429a%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://f9a.github.io/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://f9a.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://f9a.github.io/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://f9a.github.io/js/scripts.js"></script>
+    </body>
+</html>
+

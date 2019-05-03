@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Pensieve</title>
+    <link>https://f9a.github.io/categories/go/</link>
+    <description>Recent content in go on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Wed, 01 May 2019 23:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://f9a.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go Templates</title>
+      <link>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</guid>
+      <description>Ein Einführung in die Go Template Bibliothek.
+Ein Beispiel sagt mehr als 1000 Worte. Starten wir daher mit einem klassischen &amp;ldquo;Hello, World&amp;rdquo;, nicht, stattdessen gehen wir vorran mit &amp;ldquo;Mary had a little lamb&amp;rdquo;.
+package main import ( &amp;quot;html/template&amp;quot; &amp;quot;os&amp;quot; ) var littleLamb = ` Mary had a little lamb, little lamb, little lamb, Mary had a little lamb whose fleece was white as snow. And everywhere that Mary went Mary went, Mary went, everywhere that Mary went The lamb was sure to go.</description>
+    </item>
+    
+    <item>
+      <title>Go links</title>
+      <link>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</guid>
+      <description> Streaming bits and bytes  </description>
+    </item>
+    
+    <item>
+      <title>Go performance</title>
+      <link>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</guid>
+      <description>Links https://github.com/uber/go-torch</description>
+    </item>
+    
+    <item>
+      <title>Go refactoring</title>
+      <link>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</guid>
+      <description>http://spf13.com/post/go-fmt/</description>
+    </item>
+    
+    <item>
+      <title>Link list goroutines</title>
+      <link>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</link>
+      <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</guid>
+      <description> https://groups.google.com/forum/#!topic/golang-nuts/j51G7ieoKh4 https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs wie funktionieren sockets auf kernel ebene https://www.google.de/search?q=linux+socket+implementation&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gfe_rd=cr&amp;amp;ei=sX-nV4aEDeSg8wfT6IeYCA http://dave.cheney.net/2015/08/08/performance-without-the-event-loop https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit?pref=2&amp;amp;pli=1 http://stackoverflow.com/questions/1714136/can-you-detect-how-many-threads-a-given-number-of-goroutines-will-create https://www.youtube.com/watch?v=N3PWzBeLX2M&amp;amp;feature=youtu.be https://manning-content.s3.amazonaws.com/download/a/d666b07-be97-457d-90cc-36d7e79f0989/Sample-Ch06.pdf https://morsmachine.dk/go-scheduler https://morsmachine.dk/netpoller https://github.com/golang/go/blob/4fc9565ffce91c4299903f7c17a275f0786734a1/src/runtime/chan.go https://docs.google.com/document/d/1yIAYmbvL3JxOKOjuCyon7JhW4cSv1wy5hC0ApeGMV9s/pub  </description>
+    </item>
+    
+    <item>
+      <title>Zap Snippets</title>
+      <link>https://f9a.github.io/post/uuid/185fdbc6-a530-5da5-9bd3-9d4af9f43ae9/</link>
+      <pubDate>Mon, 01 Apr 2019 00:04:02 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/185fdbc6-a530-5da5-9bd3-9d4af9f43ae9/</guid>
+      <description>func makeFileLogger(logger *zap.Logger, importDir string) (log *zap.Logger) { logFileName := fmt.Sprintf(&amp;quot;errors-%v.log&amp;quot;, time.Now().Format(time.RFC3339)) logFile := filepath.Join(importDir, logFileName) fhErrorLogs, err := os.Create(logFile) if err != nil { logger.Fatal(&amp;quot;Cannot create error log file&amp;quot;, zap.Error(err)) } allPriority := zap.LevelEnablerFunc(func(lvl zapcore.Level) bool { return true }) systemdEncoder := zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig()) fileEncoder := zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig()) systemdWriter := zapcore.Lock(os.Stdout) fileWriter := zapcore.AddSync(fhErrorLogs) core := zapcore.NewTee( zapcore.NewCore(systemdEncoder, systemdWriter, allPriority), zapcore.NewCore(fileEncoder, fileWriter, allPriority), ) return zap.New(core) }  </description>
+    </item>
+    
+    <item>
+      <title>Go Blob</title>
+      <link>https://f9a.github.io/post/uuid/47146662-f7e0-54f5-9ed6-9b32db0b7d37/</link>
+      <pubDate>Wed, 23 Jan 2019 22:29:01 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/47146662-f7e0-54f5-9ed6-9b32db0b7d37/</guid>
+      <description>Important package https://github.com/gofrs (uuid)
+HTTP Debug GODEBUG=http2debug=2
+Password prompt Recently I&amp;rsquo;ve been working with an internal Go tool that uses environment variables for accessing user credentials that are being used to authenticate. While I find that very handy, I was wondering how difficult would it be to add the functionality of providing the password manually, but in a safe (non-displaying) way. As it turned out, it cannot be any easier!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -20,5 +20,25 @@
       <description> Hello World package main import &amp;quot;fmt&amp;quot; func main() { fmt.Println(&amp;quot;Hello World&amp;quot;) }  </description>
     </item>
     
+    <item>
+      <title>Javascript Wüste! &#39;this&#39; is not the end</title>
+      <link>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</guid>
+      <description>Umgebung die JavaScript Konsole von mozilla console. ES5 das heißt Version 5.1 des Sprachstandards
+Damit das Sandel auch spaß macht
+git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to rumble  Prolog Die Sonne scheint. Crock sitz in seinem Auto. Wind weht durch seine Barthaare und lässt sie im klang der Stille umher tanzen. &amp;ldquo;Manchmal ist es einfach gut nur zu &amp;lsquo;Sein&amp;rsquo;!&amp;rdquo;. Jedoch ist es nicht so gut, einfach hier zu &amp;lsquo;Sein&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>node.js</title>
+      <link>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</link>
+      <pubDate>Thu, 03 Dec 2015 17:04:15 +0100</pubDate>
+      
+      <guid>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</guid>
+      <description>Basics Beschäftigt man sich zum ersten mal mit Node.js fallen schnell Begriffe wie non-blocking, event-driven, async und EventLoop. Dann liest man auf der anderen Seite aber wieder das JavaScript single thread ist also nur ein Befehl nachdem andern ausführen kann. Wie passt das alles zusammen? Zunächst einmal ist es so das wir uns hier im Land der Bits und Bytes befinden das heißt es gibt immer einen weg etwas zum machen wie es nicht vorgesehen ist eine weg um die Idee herum.</description>
+    </item>
+    
   </channel>
 </rss>

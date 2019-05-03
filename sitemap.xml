@@ -20,11 +20,6 @@
   </url>
   
   <url>
-    <loc>https://f9a.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://f9a.github.io/tags/</loc>
     <priority>0</priority>
   </url>

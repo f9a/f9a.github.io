@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>code on Pensieve</title>
-    <link>https://f9a.github.io/categories/code/</link>
+    <link>https://p.f9a.de/categories/code/</link>
     <description>Recent content in code on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Mon, 22 Apr 2019 00:20:12 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/code/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Software Contract Systems</title>
-      <link>https://f9a.github.io/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</link>
+      <link>https://p.f9a.de/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</link>
       <pubDate>Mon, 22 Apr 2019 00:20:12 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</guid>
+      <guid>https://p.f9a.de/post/uuid/ceb7489a-e897-516a-95a0-ca2529281688/</guid>
       <description> Links  https://docs.racket-lang.org/guide/contract-func.html https://www.eiffel.org/doc/eiffel/ET-_Design_by_Contract_%28tm%29%2C_Assertions_and_Exceptions https://clojure.org/guides/spec  </description>
     </item>
     

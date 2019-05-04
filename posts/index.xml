@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Pensieve</title>
-    <link>https://f9a.github.io/posts/</link>
+    <link>https://p.f9a.de/posts/</link>
     <description>Recent content in Posts on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Fri, 03 May 2019 15:21:53 +0200</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>https://f9a.github.io/posts/my-first-post/</link>
+      <link>https://p.f9a.de/posts/my-first-post/</link>
       <pubDate>Fri, 03 May 2019 15:21:53 +0200</pubDate>
       
-      <guid>https://f9a.github.io/posts/my-first-post/</guid>
+      <guid>https://p.f9a.de/posts/my-first-post/</guid>
       <description> Hello World package main import &amp;quot;fmt&amp;quot; func main() { fmt.Println(&amp;quot;Hello World&amp;quot;) }  </description>
     </item>
     
     <item>
       <title>OpenSSl</title>
-      <link>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</link>
+      <link>https://p.f9a.de/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</guid>
+      <guid>https://p.f9a.de/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</guid>
       <description>Zertifikat mit SNI Feldern SNI: Server Name Indication ist eine Erweiterung des x.509 Standards. Wann benötigt man diese Felder? Benutzt man zum Beispiel den golang http-client und baut eine Verbindung zu einem https Server auf überprüft ob der im Feld subjectAltName angegebene Wert mit dem host in der URL übereinstimmt.
 Bekommt man von einem Programm denn Error &amp;ldquo;Failed to tls handshake with x.x.x.x x509: cannot validate certificate for x.x.x.x because it doesn&amp;rsquo;t contain any IP SANs&amp;rdquo; gezeigt heißt in diesem Fall das das Zertifikat keine subjectAltName hinterlegt hat.</description>
     </item>
     
     <item>
       <title>Go Templates</title>
-      <link>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</link>
+      <link>https://p.f9a.de/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</link>
       <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</guid>
+      <guid>https://p.f9a.de/post/uuid/6e6e83fd-24a1-5ed1-b763-3eceefe50c5d/</guid>
       <description>Ein Einführung in die Go Template Bibliothek.
 Ein Beispiel sagt mehr als 1000 Worte. Starten wir daher mit einem klassischen &amp;ldquo;Hello, World&amp;rdquo;, nicht, stattdessen gehen wir vorran mit &amp;ldquo;Mary had a little lamb&amp;rdquo;.
 package main import ( &amp;quot;html/template&amp;quot; &amp;quot;os&amp;quot; ) var littleLamb = ` Mary had a little lamb, little lamb, little lamb, Mary had a little lamb whose fleece was white as snow. And everywhere that Mary went Mary went, Mary went, everywhere that Mary went The lamb was sure to go.</description>
@@ -43,46 +43,46 @@ package main import ( &amp;quot;html/template&amp;quot; &amp;quot;os&amp;quot; )
     
     <item>
       <title>Go links</title>
-      <link>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</link>
+      <link>https://p.f9a.de/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</link>
       <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</guid>
+      <guid>https://p.f9a.de/post/uuid/ba9c06c4-d7d3-5376-a1dd-6bde6955c1f7/</guid>
       <description> Streaming bits and bytes  </description>
     </item>
     
     <item>
       <title>Go performance</title>
-      <link>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</link>
+      <link>https://p.f9a.de/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</link>
       <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</guid>
+      <guid>https://p.f9a.de/post/uuid/8c063840-35d3-54df-ad27-2439019f07f1/</guid>
       <description>Links https://github.com/uber/go-torch</description>
     </item>
     
     <item>
       <title>Go refactoring</title>
-      <link>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</link>
+      <link>https://p.f9a.de/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</link>
       <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</guid>
+      <guid>https://p.f9a.de/post/uuid/2008745e-8f4c-533c-99a8-78759c1fc0ff/</guid>
       <description>http://spf13.com/post/go-fmt/</description>
     </item>
     
     <item>
       <title>Link list goroutines</title>
-      <link>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</link>
+      <link>https://p.f9a.de/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</link>
       <pubDate>Wed, 01 May 2019 23:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</guid>
+      <guid>https://p.f9a.de/post/uuid/f961a5dc-cf0c-5125-89f3-a03e4c1c7678/</guid>
       <description> https://groups.google.com/forum/#!topic/golang-nuts/j51G7ieoKh4 https://software.intel.com/en-us/blogs/2014/05/10/debugging-performance-issues-in-go-programs wie funktionieren sockets auf kernel ebene https://www.google.de/search?q=linux+socket+implementation&amp;amp;ie=utf-8&amp;amp;oe=utf-8&amp;amp;client=firefox-b-ab&amp;amp;gfe_rd=cr&amp;amp;ei=sX-nV4aEDeSg8wfT6IeYCA http://dave.cheney.net/2015/08/08/performance-without-the-event-loop https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit?pref=2&amp;amp;pli=1 http://stackoverflow.com/questions/1714136/can-you-detect-how-many-threads-a-given-number-of-goroutines-will-create https://www.youtube.com/watch?v=N3PWzBeLX2M&amp;amp;feature=youtu.be https://manning-content.s3.amazonaws.com/download/a/d666b07-be97-457d-90cc-36d7e79f0989/Sample-Ch06.pdf https://morsmachine.dk/go-scheduler https://morsmachine.dk/netpoller https://github.com/golang/go/blob/4fc9565ffce91c4299903f7c17a275f0786734a1/src/runtime/chan.go https://docs.google.com/document/d/1yIAYmbvL3JxOKOjuCyon7JhW4cSv1wy5hC0ApeGMV9s/pub  </description>
     </item>
     
     <item>
       <title>Public-Key-Kryptoverfahren Teil 2</title>
-      <link>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</link>
+      <link>https://p.f9a.de/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</guid>
+      <guid>https://p.f9a.de/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</guid>
       <description>Kapitel 4 - Diffe-Hellmann-Schlüsselaustausch Einweg Public-Keys
 b^x mod p  Quellen https://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch
 RSA  https://www.emc.com/collateral/white-papers/h11300-pkcs-1v2-2-rsa-cryptography-standard-wp.pdf https://tools.ietf.org/html/rfc3447  TLS RFC2246: https://tools.ietf.org/html/rfc2246
@@ -92,19 +92,19 @@ Verbindungs aufbau Client sendet eine Liste von chiper suits die er beherrscht S
     
     <item>
       <title>Public-Key-Kryptoverfahren Teil 1</title>
-      <link>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</link>
+      <link>https://p.f9a.de/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</link>
       <pubDate>Thu, 08 Sep 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</guid>
+      <guid>https://p.f9a.de/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</guid>
       <description>Einleitung Warum schreibe ich diesen Text Es ging mir nicht darum einzelnen Verfahren Technisch zu Beschreiben oder gar erschöfpend zu Beschreiben dazu fehlt mir bei weitem das Wissen. Es ging darum eine Übersicht über die Zusammenhänge zwischen Verfahren und Funktionen zu geben ebenso aufzuzeigen warum diese unterschiedliche Verfahren und Funktionen existieren. Weiter möchte ich anderen die Denkfehler ersparen wie ich sie gemacht. Die ganze Reise began damit das ich nicht verstanden habe warum man zum Erzeugen eines CSR (Certificate Signing Request) ein Private Key benötigt und woher der Public Key darin plötzlich herkamm obwohl ich diesen doch nie explizit erzeugt habe.</description>
     </item>
     
     <item>
       <title>Javascript Wüste! &#39;this&#39; is not the end</title>
-      <link>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</link>
+      <link>https://p.f9a.de/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</link>
       <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</guid>
+      <guid>https://p.f9a.de/post/uuid/10d97dff-c305-5813-a777-d867bfcbf22e/</guid>
       <description>Umgebung die JavaScript Konsole von mozilla console. ES5 das heißt Version 5.1 des Sprachstandards
 Damit das Sandel auch spaß macht
 git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to rumble  Prolog Die Sonne scheint. Crock sitz in seinem Auto. Wind weht durch seine Barthaare und lässt sie im klang der Stille umher tanzen. &amp;ldquo;Manchmal ist es einfach gut nur zu &amp;lsquo;Sein&amp;rsquo;!&amp;rdquo;. Jedoch ist es nicht so gut, einfach hier zu &amp;lsquo;Sein&amp;rsquo;.</description>
@@ -112,19 +112,19 @@ git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to 
     
     <item>
       <title>node.js</title>
-      <link>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</link>
+      <link>https://p.f9a.de/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</link>
       <pubDate>Thu, 03 Dec 2015 17:04:15 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</guid>
+      <guid>https://p.f9a.de/post/uuid/254015e7-9aaf-5974-94fa-614da70f066f/</guid>
       <description>Basics Beschäftigt man sich zum ersten mal mit Node.js fallen schnell Begriffe wie non-blocking, event-driven, async und EventLoop. Dann liest man auf der anderen Seite aber wieder das JavaScript single thread ist also nur ein Befehl nachdem andern ausführen kann. Wie passt das alles zusammen? Zunächst einmal ist es so das wir uns hier im Land der Bits und Bytes befinden das heißt es gibt immer einen weg etwas zum machen wie es nicht vorgesehen ist eine weg um die Idee herum.</description>
     </item>
     
     <item>
       <title>Python syntax sugar</title>
-      <link>https://f9a.github.io/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</link>
+      <link>https://p.f9a.de/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</link>
       <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</guid>
+      <guid>https://p.f9a.de/post/uuid/3c7809a5-4c52-5ea1-a3cf-ae932b8b4de0/</guid>
       <description>In Python ist alles Syntax-Sugar
 &amp;gt;&amp;gt;&amp;gt; l = [] &amp;gt;&amp;gt;&amp;gt; l = list()  &amp;gt;&amp;gt;&amp;gt; class AB: name=&amp;quot;AB&amp;quot;; &amp;gt;&amp;gt;&amp;gt; AB.name &amp;quot;AB&amp;quot; &amp;gt;&amp;gt;&amp;gt; getattr(AB, &amp;quot;name&amp;quot;) &amp;quot;AB&amp;quot; &amp;gt;&amp;gt;&amp;gt; type(AB).__getattribute__(AB, &amp;quot;name&amp;quot;) &amp;quot;AB&amp;quot;  &amp;gt;&amp;gt;&amp;gt; 2**2 4 &amp;gt;&amp;gt;&amp;gt; int(2).__pow__(2) 4  &amp;gt;&amp;gt;&amp;gt; class A(object): def af(self): print &amp;quot;FUNKTION a in Klasse A&amp;quot; &amp;gt;&amp;gt;&amp;gt; a = A() &amp;gt;&amp;gt;&amp;gt; a.af() &amp;quot;FUNKTION a in Klasse A&amp;quot; &amp;gt;&amp;gt;&amp;gt; type(A).__getattribute__(A, &amp;quot;af&amp;quot;)(a) &amp;quot;FUNKTION a in Klasse A&amp;quot;  &amp;gt;&amp;gt;&amp;gt; import types &amp;gt;&amp;gt;&amp;gt; globals &amp;lt;built-in function globals&amp;gt; &amp;gt;&amp;gt;&amp;gt; globals() {&#39;__builtins__&#39;: &amp;lt;module &#39;__builtin__&#39; (built-in)&amp;gt;, &#39;__name__&#39;: &#39;__main__&#39;, &#39;__package__&#39;: None} &amp;gt;&amp;gt;&amp;gt; C = type(&amp;quot;C&amp;quot;, (object,), dict(name=&amp;quot;C&amp;quot;)) &amp;gt;&amp;gt;&amp;gt; globals() {&#39;__builtins__&#39;: &amp;lt;module &#39;__builtin__&#39; (built-in)&amp;gt;, &#39;__name__&#39;: &#39;__main__&#39;, &#39;C&#39;: &amp;lt;class &#39;__main__.</description>
     </item>

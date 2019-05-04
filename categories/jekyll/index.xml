@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on Pensieve</title>
-    <link>https://f9a.github.io/categories/jekyll/</link>
+    <link>https://p.f9a.de/categories/jekyll/</link>
     <description>Recent content in jekyll on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Wed, 25 Nov 2015 09:07:27 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/jekyll/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/jekyll/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jekyll Funktinoiert nicht mit Python3</title>
-      <link>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</link>
+      <link>https://p.f9a.de/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</link>
       <pubDate>Wed, 25 Nov 2015 09:07:27 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</guid>
+      <guid>https://p.f9a.de/post/uuid/50a9634b-cb59-5224-8d41-de81bfa748b1/</guid>
       <description>jekyll Funktinoiert nicht mit python3
 Pygments Error bei der Installtion von jekyll
  https://github.com/jekyll/jekyll/issues/1379 https://github.com/tmm1/pygments.rb/issues/45  </description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crypto on Pensieve</title>
-    <link>https://f9a.github.io/categories/crypto/</link>
+    <link>https://p.f9a.de/categories/crypto/</link>
     <description>Recent content in crypto on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Fri, 09 Sep 2016 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/crypto/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Public-Key-Kryptoverfahren Teil 2</title>
-      <link>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</link>
+      <link>https://p.f9a.de/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</link>
       <pubDate>Fri, 09 Sep 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</guid>
+      <guid>https://p.f9a.de/post/uuid/41a5cdda-50bd-5cab-9291-8031a4a278db/</guid>
       <description>Kapitel 4 - Diffe-Hellmann-Schlüsselaustausch Einweg Public-Keys
 b^x mod p  Quellen https://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch
 RSA  https://www.emc.com/collateral/white-papers/h11300-pkcs-1v2-2-rsa-cryptography-standard-wp.pdf https://tools.ietf.org/html/rfc3447  TLS RFC2246: https://tools.ietf.org/html/rfc2246
@@ -26,10 +26,10 @@ Verbindungs aufbau Client sendet eine Liste von chiper suits die er beherrscht S
     
     <item>
       <title>Public-Key-Kryptoverfahren Teil 1</title>
-      <link>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</link>
+      <link>https://p.f9a.de/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</link>
       <pubDate>Thu, 08 Sep 2016 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</guid>
+      <guid>https://p.f9a.de/post/uuid/d0a03c7a-e7dc-5fc4-ac76-8395d328a7d3/</guid>
       <description>Einleitung Warum schreibe ich diesen Text Es ging mir nicht darum einzelnen Verfahren Technisch zu Beschreiben oder gar erschöfpend zu Beschreiben dazu fehlt mir bei weitem das Wissen. Es ging darum eine Übersicht über die Zusammenhänge zwischen Verfahren und Funktionen zu geben ebenso aufzuzeigen warum diese unterschiedliche Verfahren und Funktionen existieren. Weiter möchte ich anderen die Denkfehler ersparen wie ich sie gemacht. Die ganze Reise began damit das ich nicht verstanden habe warum man zum Erzeugen eines CSR (Certificate Signing Request) ein Private Key benötigt und woher der Public Key darin plötzlich herkamm obwohl ich diesen doch nie explizit erzeugt habe.</description>
     </item>
     

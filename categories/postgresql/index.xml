@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>postgresql on Pensieve</title>
-    <link>https://f9a.github.io/categories/postgresql/</link>
+    <link>https://p.f9a.de/categories/postgresql/</link>
     <description>Recent content in postgresql on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Sun, 24 Sep 2017 13:22:54 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PostgreSQL</title>
-      <link>https://f9a.github.io/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</link>
+      <link>https://p.f9a.de/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</link>
       <pubDate>Sun, 24 Sep 2017 13:22:54 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</guid>
+      <guid>https://p.f9a.de/post/uuid/127f9773-6bcb-528d-8ce2-c137f8a3429a/</guid>
       <description> Tunning https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
 Konfigurations Parameter https://www.postgresql.org/docs/current/static/runtime-config.html
 Error codes https://www.postgresql.org/docs/9.5/static/errcodes-appendix.html

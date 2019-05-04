@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aws on Pensieve</title>
-    <link>https://f9a.github.io/categories/aws/</link>
+    <link>https://p.f9a.de/categories/aws/</link>
     <description>Recent content in aws on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Wed, 13 Feb 2019 23:42:03 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Amazon Linux 2</title>
-      <link>https://f9a.github.io/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</link>
+      <link>https://p.f9a.de/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</link>
       <pubDate>Wed, 13 Feb 2019 23:42:03 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</guid>
+      <guid>https://p.f9a.de/post/uuid/31000b02-e894-5daf-afe6-fa5bb9685220/</guid>
       <description>Instance Types https://aws.amazon.com/de/ec2/pricing/on-demand/
 AMI extras amazon-linux-extras
 Find versions [ec2-user ~]$ `**cat /etc/image-id**` image_name=&amp;quot;amzn2-ami-hvm&amp;quot; image_version=&amp;quot;2&amp;quot; image_arch=&amp;quot;x86_64&amp;quot; image_file=&amp;quot;amzn2-ami-hvm-2.0.20180810-x86_64.xfs.gpt&amp;quot; image_stamp=&amp;quot;8008-2abd&amp;quot; image_date=&amp;quot;20180811020321&amp;quot; recipe_name=&amp;quot;amzn2 ami&amp;quot; recipe_id=&amp;quot;c652686a-2415-9819-65fb-4dee-9792-289d-1e2846bd&amp;quot;  [ec2-user ~]$ `**cat /etc/system-release** `Amazon Linux 2  [ec2-user ~]$ `**cat /etc/os-release**` NAME=&amp;quot;Amazon Linux&amp;quot; VERSION=&amp;quot;2&amp;quot; ID=&amp;quot;amzn&amp;quot; ID_LIKE=&amp;quot;centos rhel fedora&amp;quot; VERSION_ID=&amp;quot;2&amp;quot; PRETTY_NAME=&amp;quot;Amazon Linux 2&amp;quot; ANSI_COLOR=&amp;quot;0;33&amp;quot; CPE_NAME=&amp;quot;cpe:2.3:o:amazon:amazon_linux:2&amp;quot; HOME_URL=&amp;quot;https://amazonlinux.com/&amp;quot;  Sicherheits-Updates Sicherheitsupdates werden über die Paket-Repositorys sowie über aktualisierte AMIs bereitgestellt. Sicherheitswarnungen werden im Amazon Linux-Sicherheitszentrum veröffentlicht. Weitere Informationen zu den AWS-Sicherheitsrichtlinien finden Sie im AWS-Sicherheitszentrum; dort können Sie auch ein Sicherheitsproblem melden.</description>

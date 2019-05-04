@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Pensieve</title>
-    <link>https://f9a.github.io/categories/git/</link>
+    <link>https://p.f9a.de/categories/git/</link>
     <description>Recent content in git on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Sun, 21 Apr 2019 00:18:45 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>GIT</title>
-      <link>https://f9a.github.io/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</link>
+      <link>https://p.f9a.de/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</link>
       <pubDate>Sun, 21 Apr 2019 00:18:45 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</guid>
+      <guid>https://p.f9a.de/post/uuid/29c9f2ae-e14f-520b-a0b9-93013b2a7aff/</guid>
       <description>Random git commands Tags git show-ref --tags  Stash git stash apply stash@{1}  Reset git reset --merge ORIG_HEAD   &amp;ndash;merge
 Resets the index and updates the files in the working tree that are different between  and HEAD, but keeps those which are different between the index and working tree (i.e. which have changes which have not been added).
  Links https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified

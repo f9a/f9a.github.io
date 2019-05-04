@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cypto on Pensieve</title>
-    <link>https://f9a.github.io/categories/cypto/</link>
+    <link>https://p.f9a.de/categories/cypto/</link>
     <description>Recent content in cypto on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Fri, 03 May 2019 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/categories/cypto/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/categories/cypto/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OpenSSl</title>
-      <link>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</link>
+      <link>https://p.f9a.de/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</guid>
+      <guid>https://p.f9a.de/post/uuid/1452c5c2-b060-5407-a03d-236de8866286/</guid>
       <description>Zertifikat mit SNI Feldern SNI: Server Name Indication ist eine Erweiterung des x.509 Standards. Wann benötigt man diese Felder? Benutzt man zum Beispiel den golang http-client und baut eine Verbindung zu einem https Server auf überprüft ob der im Feld subjectAltName angegebene Wert mit dem host in der URL übereinstimmt.
 Bekommt man von einem Programm denn Error &amp;ldquo;Failed to tls handshake with x.x.x.x x509: cannot validate certificate for x.x.x.x because it doesn&amp;rsquo;t contain any IP SANs&amp;rdquo; gezeigt heißt in diesem Fall das das Zertifikat keine subjectAltName hinterlegt hat.</description>
     </item>

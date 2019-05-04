@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Pensieve</title>
-    <link>https://f9a.github.io/tags/</link>
+    <link>https://p.f9a.de/tags/</link>
     <description>Recent content in Tags on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
     <lastBuildDate>Fri, 03 May 2019 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://f9a.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://p.f9a.de/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>openssl</title>
-      <link>https://f9a.github.io/tags/openssl/</link>
+      <link>https://p.f9a.de/tags/openssl/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://f9a.github.io/tags/openssl/</guid>
+      <guid>https://p.f9a.de/tags/openssl/</guid>
       <description></description>
     </item>
     

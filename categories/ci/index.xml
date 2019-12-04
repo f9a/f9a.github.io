@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ci on Pensieve</title>
+    <link>https://p.f9a.de/categories/ci/</link>
+    <description>Recent content in ci on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 23 Apr 2019 00:22:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://p.f9a.de/categories/ci/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setup Gitlab-CI for mobile</title>
+      <link>https://p.f9a.de/post/uuid/1af732d8-5bde-589c-a282-db05528e2d20/</link>
+      <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/1af732d8-5bde-589c-a282-db05528e2d20/</guid>
+      <description>Copy CI files from cimonster Project https://gitlab.ants.house/cimonster/fe/mobile
+cp -a ~/cimonster/fe/mobile/fastlane . cp ~/cimonster/fe/mobile/Gemfile . bundle update cp ~/cimonster/fe/mobile/.gitlab-ci.yml . cp -a ~/cimonster/fe/mobile/ci .  gitlab-ci.yml If the project does not deviate from the standard structure only the PROJECT_NAME variable must be adapted.
+iOS Certificates, Identifiers &amp;amp; Profiles https://developer.apple.com/account/resources/certificates/list
+Create new App ID
+Create new distribution profile $projectname-DISTRIBUTION.
+Create new development profile $projectname-DEV.
+Appstoreconnect https://appstoreconnect.apple.com
+Create app
+Xcode Set bundle identifier auf house.</description>
+    </item>
+    
+  </channel>
+</rss>

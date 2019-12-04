@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Setup Gitlab-CI for mobile &middot; Mr. Hash</title>
+        <meta name="description" content="Copy CI files from cimonster Project https://gitlab.ants.house/cimonster/fe/mobile
+cp -a ~/cimonster/fe/mobile/fastlane . cp ~/cimonster/fe/mobile/Gemfile . bundle update cp ~/cimonster/fe/mobile/.gitlab-ci.yml . cp -a ~/cimonster/fe/mobile/ci .  gitlab-ci.yml If the project does not deviate from the standard structure only the PROJECT_NAME variable must be adapted.
+iOS Certificates, Identifiers &amp; Profiles https://developer.apple.com/account/resources/certificates/list
+Create new App ID
+Create new distribution profile $projectname-DISTRIBUTION.
+Create new development profile $projectname-DEV.
+Appstoreconnect https://appstoreconnect.apple.com
+Create app
+Xcode Set bundle identifier auf house.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://p.f9a.de/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://p.f9a.de/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://p.f9a.de/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title">Setup Gitlab-CI for mobile</h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    
+
+<h1 id="copy-ci-files-from-cimonster-project">Copy CI files from cimonster Project</h1>
+
+<p><a href="https://gitlab.ants.house/cimonster/fe/mobile">https://gitlab.ants.house/cimonster/fe/mobile</a></p>
+
+<pre><code class="language-bash">cp -a ~/cimonster/fe/mobile/fastlane .
+cp ~/cimonster/fe/mobile/Gemfile .
+bundle update
+cp ~/cimonster/fe/mobile/.gitlab-ci.yml .
+cp -a ~/cimonster/fe/mobile/ci .
+</code></pre>
+
+<h1 id="gitlab-ci-yml">gitlab-ci.yml</h1>
+
+<p>If the project does not deviate from the standard structure only the PROJECT_NAME variable must be adapted.</p>
+
+<h1 id="ios">iOS</h1>
+
+<h2 id="certificates-identifiers-profiles">Certificates, Identifiers &amp; Profiles</h2>
+
+<p><a href="https://developer.apple.com/account/resources/certificates/list">https://developer.apple.com/account/resources/certificates/list</a></p>
+
+<p>Create new App ID</p>
+
+<p>Create new distribution profile $projectname-DISTRIBUTION.</p>
+
+<p>Create new development profile $projectname-DEV.</p>
+
+<h2 id="appstoreconnect">Appstoreconnect</h2>
+
+<p><a href="https://appstoreconnect.apple.com/">https://appstoreconnect.apple.com</a></p>
+
+<p>Create app</p>
+
+<h2 id="xcode">Xcode</h2>
+
+<p>Set bundle identifier auf house.ants.$projectname.</p>
+
+<p>Deaktiviert &ldquo;Automatically manage signing&rdquo;.</p>
+
+<p>Create a new scheme in the following format $projectname-RELEASE. Set &ldquo;Configuration&rdquo; to Release.</p>
+
+<h2 id="fastline-match">Fastline match</h2>
+
+<p>Add provisioning profile to match cert repository (<a href="https://gitlab.ants.house/op/fastlane-match-add-cert">https://gitlab.ants.house/op/fastlane-match-add-cert</a>)</p>
+
+<pre><code class="language-bash">ruby main.rb -I -r https://gitlab.ants.house/certs/app-store -u $admin_mail -t U8L56RYFUT
+</code></pre>
+
+<h2 id="set-gitlab-ci-envs">Set gitlab-ci Envs</h2>
+
+<p>Recommendation choose password without symbols can happen that it you got problems with shell (bash/zsh/etc)</p>
+
+<p>FASTLANE_PASSWORD is password for ci@ants.house apple-id</p>
+
+<p>MATCH_PASSWORD is password for match certificate repository</p>
+
+<h1 id="android">Android</h1>
+
+<h2 id="play-store">Play Store</h2>
+
+<p>Create App, setup basics.</p>
+
+<p>If not existing create google credentials <a href="https://docs.fastlane.tools/getting-started/android/setup/#collect-your-google-credentials">https://docs.fastlane.tools/getting-started/android/setup/#collect-your-google-credentials</a>.</p>
+
+<p>Store JSON in GOOGLE_PLAYSTORE_CREDENTIALS gitlab environment variable</p>
+
+<h2 id="keystore">keystore</h2>
+
+<p><strong>DON&rsquo;T STORE KEYSTORE IN GIT REPO</strong></p>
+
+<pre><code class="language-bash">keytool -genkeypair -v -keystore $projectname.keystore -alias $projectname -keyalg RSA -keysize 2048 -validity 10000
+keytool -importkeystore -srckeystore $projectname.keystore -destkeystore $projectname.keystore -deststoretype pkcs12
+cat $projectname.keystore | base64
+</code></pre>
+
+<p>Store output in KEYSTORE gitlabe environment variable.</p>
+
+<h2 id="update-gradle-files">Update gradle files</h2>
+
+<p>Update android/app/build.gradle</p>
+
+<pre><code class="language-gradle">    ...
+    defaultConfig {
+        applicationId &quot;house.ants.$projectname&quot;
+        ...
+</code></pre>
+
+<pre><code>def enableProguardInReleaseBuilds = false
+def appVersionCode = Integer.valueOf(APP_VERSION_CODE ?: 0)
+
+android {
+</code></pre>
+
+<pre><code>    ...
+    defaultConfig {
+        applicationId &quot;house.ants.foxy&quot;
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode appVersionCode // use definition from above
+        versionName APP_VERSION_NAME // use env
+
+        // Needed to support API&lt;21, though there is a small chance proguard shrinks things sufficiently
+        multiDexEnabled true
+    }
+    ...
+</code></pre>
+
+<h3 id="enable-signing">Enable signing</h3>
+
+<p><a href="https://facebook.github.io/react-native/docs/signed-apk-android">https://facebook.github.io/react-native/docs/signed-apk-android</a> (we use different environment variables then on the webpage but the idea is the same)</p>
+
+<pre><code class="language-gradle">...
+android {
+    ...
+    defaultConfig { ... }
+    signingConfigs {
+        release {
+            if (project.hasProperty('APP_RELEASE_STORE_FILE')) {
+                storeFile file(APP_RELEASE_STORE_FILE)
+                storePassword APP_RELEASE_STORE_PASSWORD
+                keyAlias APP_RELEASE_KEY_ALIAS
+                keyPassword APP_RELEASE_KEY_PASSWORD
+            }
+        }
+    }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+...
+</code></pre>
+
+<h3 id="gradle-properties">Gradle properties</h3>
+
+<p>Update android/gradle.properties</p>
+
+<pre><code class="language-gradle">APP_RELEASE_STORE_FILE=$projectname.keystore
+APP_RELEASE_KEY_ALIAS=$projectname  
+</code></pre>
+
+<h3 id="set-gitlab-ci-environment-variables">Set gitlab-ci Environment Variables</h3>
+
+<p>ORG_GRADLE_PROJECT_APP_RELEASE_STORE_PASSWORD password for keystore</p>
+
+<p>ORG_GRADLE_PROJECT_APP_RELEASE_KEY_PASSWORD password for keystore alias item</p>
+
+<h1 id="enable-slack-notifications-optional">Enable Slack notifications (Optional)</h1>
+
+<p>Create a webhook for $projectname channel and add it to SLACK_URL gitlab-ci environment variable</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Setup%20Gitlab-CI%20for%20mobile&url=https%3a%2f%2fp.f9a.de%2fpost%2fuuid%2f1af732d8-5bde-589c-a282-db05528e2d20%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fp.f9a.de%2fpost%2fuuid%2f1af732d8-5bde-589c-a282-db05528e2d20%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fp.f9a.de%2fpost%2fuuid%2f1af732d8-5bde-589c-a282-db05528e2d20%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://p.f9a.de/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://p.f9a.de/js/jquery-1.11.3.min.js"></script>
+        <script src="https://p.f9a.de/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://p.f9a.de/js/scripts.js"></script>
+    </body>
+</html>
+

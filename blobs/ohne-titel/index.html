@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> &middot; Mr. Hash</title>
+        <meta name="description" content="Eine Datenansicht einer Architektur zeigt den Anwendungszustand an, wenn Informationen durch die Komponenten fließen. Da REST speziell auf verteilte Informationssysteme ausgerichtet ist, betrachtet es eine Anwendung als eine zusammenhängende Struktur von Informations- und Kontrollalternativen, durch die ein Benutzer eine gewünschte Aufgabe ausführen kann. So ist beispielsweise das Nachschlagen eines Wortes in einem Online-Wörterbuch eine Anwendung, ebenso wie das Durchsuchen eines virtuellen Museums oder das Durchlesen einer Reihe von Notizen, um für eine Prüfung zu lernen.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.5" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://p.f9a.de/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Pensieve" href="https://p.f9a.de/">Pensieve</a>
+                            </h1>
+                        
+                        <a class="button-square" href="https://p.f9a.de/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Posts" href="/posts">Posts</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container">
+        <header class="post-header">
+    <h1 class="post-title"></h1>
+    
+</header>
+
+        <div class="post-content clearfix">
+    
+
+    <p>Eine Datenansicht einer Architektur zeigt den Anwendungszustand an, wenn Informationen durch die Komponenten fließen. Da REST speziell auf verteilte Informationssysteme ausgerichtet ist, betrachtet es eine Anwendung als eine zusammenhängende Struktur von Informations- und Kontrollalternativen, durch die ein Benutzer eine gewünschte Aufgabe ausführen kann. So ist beispielsweise das Nachschlagen eines Wortes in einem Online-Wörterbuch eine Anwendung, ebenso wie das Durchsuchen eines virtuellen Museums oder das Durchlesen einer Reihe von Notizen, um für eine Prüfung zu lernen. Jede Anwendung definiert Ziele für das zugrunde liegende System, an denen die Leistung des Systems gemessen werden kann.</p>
+
+<p>Komponenteninteraktionen erfolgen in Form von dynamisch dimensionierten Nachrichten. Kleine oder mittelgroße Nachrichten werden für die Steuersemantik verwendet, aber der Großteil der Anwendungsarbeit wird durch großformatige Nachrichten geleistet, die eine vollständige Ressourcendarstellung enthalten. Die häufigste Form der Requestsemantik ist das Abrufen einer Repräsentation einer Ressource (z.B. die &ldquo;GET&rdquo;-Methode in HTTP), die oft für eine spätere Wiederverwendung zwischengespeichert werden kann.</p>
+
+<p>REST konzentriert den gesamten Kontrollzustand auf die Darstellungen, die als Reaktion auf Wechselwirkungen empfangen werden. Ziel ist es, die Serverskalierbarkeit zu verbessern, indem es entfällt, dass der Server über die aktuelle Anforderung hinaus ein Bewusstsein für den Client-Zustand aufrechterhalten muss. Der Zustand einer Anwendung wird daher durch ihre ausstehenden Anforderungen, die Topologie der verbundenen Komponenten (von denen einige gepufferte Daten filtern können), die aktiven Anforderungen an diese Konnektoren, den Datenfluss von Darstellungen als Reaktion auf diese Anforderungen und die Verarbeitung dieser Darstellungen, wie sie vom Benutzeragenten empfangen werden, definiert.</p>
+
+<p>Eine Anwendung erreicht einen stationären Zustand, wenn sie keine offenen Anforderungen hat, d.h. sie hat keine offenen Anforderungen und alle Antworten auf ihre aktuellen Anforderungen sind vollständig empfangen oder empfangen worden, bis sie als Darstellungsdatenstrom behandelt werden können. Für eine Browseranwendung entspricht dieser Zustand einer &ldquo;Webseite&rdquo;, die die primäre Darstellung und zusätzliche Darstellungen wie Inline-Bilder, eingebettete Applets und Style Sheets enthält. Die Bedeutung von stationären Anwendungszuständen zeigt sich in ihren Auswirkungen sowohl auf die vom Benutzer wahrgenommene Leistung als auch auf die Burstiness des Netzwerkanforderungsverkehrs.</p>
+
+<p>Die vom Benutzer wahrgenommene Leistung einer Browseranwendung wird durch die Latenzzeit zwischen den stationären Zuständen bestimmt: die Zeitspanne zwischen der Auswahl eines Hypermedia-Links auf einer Webseite und dem Zeitpunkt, zu dem brauchbare Informationen für die nächste Webseite bereitgestellt wurden. Die Optimierung der Browserleistung konzentriert sich daher auf die Reduzierung dieser Kommunikationslatenz.</p>
+
+<p>Da REST-basierte Architekturen in erster Linie durch die Übertragung von Repräsentationen von Ressourcen kommunizieren, kann die Latenz sowohl durch das Design der Kommunikationsprotokolle als auch durch das Design der Darstellungsdatenformate beeinflusst werden. Die Fähigkeit, die Antwortdaten beim Empfang schrittweise wiederzugeben, wird durch das Design des Medientyps und die Verfügbarkeit von Layoutinformationen (visuelle Abmessungen von Inline-Objekten) innerhalb jeder Darstellung bestimmt.</p>
+
+<p>Eine interessante Beobachtung ist, dass die effizienteste Netzwerkanforderung eine ist, die das Netzwerk nicht nutzt. Mit anderen Worten, die Möglichkeit, eine zwischengespeicherte Antwort wiederzuverwenden, führt zu einer erheblichen Verbesserung der Anwendungsleistung. Obwohl die Verwendung eines Caches aufgrund des Lookup-Overheads jedem einzelnen Request eine gewisse Latenzzeit hinzufügt, wird die durchschnittliche Request-Latenzzeit deutlich reduziert, wenn bereits ein kleiner Prozentsatz der Requests zu brauchbaren Cache-Treffern führt.</p>
+
+<p>Der nächste Steuerzustand einer Anwendung liegt in der Darstellung der ersten angeforderten Ressource, so dass das Erhalten dieser ersten Darstellung eine Priorität ist. Die REST-Interaktion wird daher durch Protokolle verbessert, die &ldquo;zuerst reagieren und später denken&rdquo;. Mit anderen Worten, ein Protokoll, das mehrere Interaktionen pro Benutzeraktion erfordert, um Dinge wie die Aushandlung von Feature-Fähigkeiten vor dem Senden einer Inhaltsantwort zu tun, wird wahrnehmbar langsamer sein als ein Protokoll, das das das, was am ehesten optimal ist, zuerst sendet und dann eine Liste von Alternativen für den Client bereitstellt, die er abrufen kann, wenn die erste Antwort unbefriedigend ist.</p>
+
+<p>Der Anwendungszustand wird vom Benutzeragenten gesteuert und gespeichert und kann aus Darstellungen mehrerer Server bestehen. Neben der Befreiung des Servers von den Skalierbarkeitsproblemen der Speicherung von Zuständen ermöglicht dies dem Benutzer, den Zustand direkt zu manipulieren (z.B. die Historie eines Webbrowsers), Änderungen an diesem Zustand zu antizipieren (z.B. Link Maps und Prefetching von Darstellungen) und von einer Anwendung zur anderen zu springen (z.B. Lesezeichen und URI-Eintragdialoge).</p>
+
+<p>Die Modellanwendung ist daher eine Maschine, die von einem Zustand zum nächsten übergeht, indem sie die alternativen Zustandsübergänge im aktuellen Satz von Darstellungen untersucht und auswählt. Kein Wunder, dass dies genau der Benutzeroberfläche eines Hypermedia-Browsers entspricht. Der Stil geht jedoch nicht davon aus, dass alle Anwendungen Browser sind. In der Tat,</p>
+
+<p>Übersetzt mit www.DeepL.com/Translator</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=&url=https%3a%2f%2fp.f9a.de%2fblobs%2fohne-titel%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fp.f9a.de%2fblobs%2fohne-titel%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=https%3a%2f%2fp.f9a.de%2fblobs%2fohne-titel%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Pensieve" href="https://p.f9a.de/">Pensieve</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://p.f9a.de/js/jquery-1.11.3.min.js"></script>
+        <script src="https://p.f9a.de/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="https://p.f9a.de/js/scripts.js"></script>
+    </body>
+</html>
+

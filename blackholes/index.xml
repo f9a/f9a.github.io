@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blackholes on Pensieve</title>
+    <link>https://p.f9a.de/blackholes/</link>
+    <description>Recent content in Blackholes on Pensieve</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-DE</language>
+    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://p.f9a.de/blackholes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postgresql Change Password</title>
+      <link>https://p.f9a.de/post/uuid/9804af36-f52c-5bb8-a528-90a7443e8f99/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/9804af36-f52c-5bb8-a528-90a7443e8f99/</guid>
+      <description>\password $username  </description>
+    </item>
+    
+  </channel>
+</rss>

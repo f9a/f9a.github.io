@@ -6,10 +6,61 @@
     <description>Recent content on Pensieve</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-DE</language>
-    <lastBuildDate>Fri, 03 May 2019 15:21:53 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://p.f9a.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Postgresql Change Password</title>
+      <link>https://p.f9a.de/post/uuid/9804af36-f52c-5bb8-a528-90a7443e8f99/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/9804af36-f52c-5bb8-a528-90a7443e8f99/</guid>
+      <description>\password $username  </description>
+    </item>
+    
+    <item>
+      <title>Rename React Native Project</title>
+      <link>https://p.f9a.de/post/uuid/0fefad48-f1f1-5214-b365-7a1ae51d2d57/</link>
+      <pubDate>Tue, 04 Jun 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/0fefad48-f1f1-5214-b365-7a1ae51d2d57/</guid>
+      <description>https://github.com/invertase/react-native-firebase-starter
+bin/rename.js</description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>https://p.f9a.de/post/uuid/8177d8c3-0945-5a57-b5c9-216e3756e7b3/</link>
+      <pubDate>Sat, 18 May 2019 00:15:00 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/8177d8c3-0945-5a57-b5c9-216e3756e7b3/</guid>
+      <description>Apple Links  https://developer.apple.com/ https://privacy.apple.com/ https://appleid.apple.com/#!&amp;amp;page=signin https://itunesconnect.apple.com/  Release app iOS benötigt neue Version mit EULA
+Export Bestimmung
+Accessdialogs benötigen detailierte Beschreibung
+https://developer.apple.com/app-store/review/guidelines/
+Export Compliance https://stackoverflow.com/questions/35841117/missing-compliance-in-status-when-i-add-built-for-internal-testing-in-test-fligh
+ITMS-90683: Missing Purpose String in Info.plist - Your app&amp;rsquo;s code references one or more APIs that access sensitive user data. The app&amp;rsquo;s Info.plist file should contain a NSLocationWhenInUseUsageDescription key with a user-facing purpose string explaining clearly and completely why your app needs the data.</description>
+    </item>
+    
+    <item>
+      <title>go-kit</title>
+      <link>https://p.f9a.de/post/uuid/e9631120-573d-5971-bea2-2d044e4ba18d/</link>
+      <pubDate>Mon, 06 May 2019 15:05:00 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/e9631120-573d-5971-bea2-2d044e4ba18d/</guid>
+      <description>Design — How is a Go kit microservice modeled? Putting all these concepts together, we see that Go kit microservices are modeled like an onion, with many layers. The layers can be grouped into our three domains. The innermost service domain is where everything is based on your specific service definition, and where all of the business logic is implemented. The middle endpoint domain is where each method of your service is abstracted to the generic endpoint.</description>
+    </item>
+    
+    <item>
+      <title>BPF (Berkeley Packet Filter)</title>
+      <link>https://p.f9a.de/post/uuid/c9065241-50c2-5d5e-bad0-d7997aa024a1/</link>
+      <pubDate>Mon, 06 May 2019 15:00:00 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/c9065241-50c2-5d5e-bad0-d7997aa024a1/</guid>
+      <description> Links  https://qmonnet.github.io/whirl-offload/2016/09/01/dive-into-bpf/  </description>
+    </item>
     
     <item>
       <title>My First Post</title>
@@ -115,6 +166,23 @@ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/disk2  </description>
     </item>
     
     <item>
+      <title>Setup Gitlab-CI for mobile</title>
+      <link>https://p.f9a.de/post/uuid/1af732d8-5bde-589c-a282-db05528e2d20/</link>
+      <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/1af732d8-5bde-589c-a282-db05528e2d20/</guid>
+      <description>Copy CI files from cimonster Project https://gitlab.ants.house/cimonster/fe/mobile
+cp -a ~/cimonster/fe/mobile/fastlane . cp ~/cimonster/fe/mobile/Gemfile . bundle update cp ~/cimonster/fe/mobile/.gitlab-ci.yml . cp -a ~/cimonster/fe/mobile/ci .  gitlab-ci.yml If the project does not deviate from the standard structure only the PROJECT_NAME variable must be adapted.
+iOS Certificates, Identifiers &amp;amp; Profiles https://developer.apple.com/account/resources/certificates/list
+Create new App ID
+Create new distribution profile $projectname-DISTRIBUTION.
+Create new development profile $projectname-DEV.
+Appstoreconnect https://appstoreconnect.apple.com
+Create app
+Xcode Set bundle identifier auf house.</description>
+    </item>
+    
+    <item>
       <title>Vim</title>
       <link>https://p.f9a.de/post/uuid/d649dda8-6848-52c1-9871-3bb2df5901ec/</link>
       <pubDate>Tue, 23 Apr 2019 00:22:09 +0100</pubDate>
@@ -178,6 +246,17 @@ Show git show -s --format=%ci &amp;lt;commit&amp;gt;  Rebase https://git-scm.</d
       
       <guid>https://p.f9a.de/post/uuid/884d431b-3d5d-5466-9145-7d6b85c03321/</guid>
       <description> Provider  https://www.bitrise.io/ https://www.macstadium.com/pricing https://travis-ci.com/ https://nevercode.io/ https://www.buddybuild.com/ (Apple gekauft) https://circleci.com/ https://www.shippable.com/ https://codeship.com/ https://www.jetbrains.com/teamcity  </description>
+    </item>
+    
+    <item>
+      <title>ionic &amp; Cordova</title>
+      <link>https://p.f9a.de/post/uuid/c61e0cf6-902c-591f-87ad-8c3370d4e6ca/</link>
+      <pubDate>Sat, 30 Mar 2019 00:26:22 +0100</pubDate>
+      
+      <guid>https://p.f9a.de/post/uuid/c61e0cf6-902c-591f-87ad-8c3370d4e6ca/</guid>
+      <description>ionic 3
+xcrun simctl list runtimes xcrun simctl list  https://github.com/apache/cordova-ios/issues/427
+It just happened to me with Xcode 10.2, running on the MacOS Catalina beta. I fixed it by slightly altering the answer @waflessnet gave. Replace the availableDevices function in platforms/ios/cordova/lib/list-emulator-build-targets with the following: var availableDevices = Object.keys(devices).reduce(function (availAcc, deviceCategory) { var availableDevicesInCategory = devices[deviceCategory]; availableDevicesInCategory.forEach(function (device) { if (device &amp;amp;&amp;amp; device.name === deviceType.name.replace(/\-inch/g, &#39; inch&#39;) &amp;amp;&amp;amp; device.isAvailable == true) { availAcc.</description>
     </item>
     
     <item>
@@ -322,7 +401,16 @@ git clone https://github.com/rrawrriw/js-desert.git cd js-desert js // Ready to 
       <pubDate>Fri, 15 Jan 2016 22:10:12 +0100</pubDate>
       
       <guid>https://p.f9a.de/post/uuid/c774a1f0-14ef-5ca0-905e-7779cae7b5ec/</guid>
-      <description> Links  https://www.loggly.com/blog/why-journald/ https://www.loggly.com/ultimate-guide/linux-logging-with-systemd/ Schreibe logs in journald - http://serverfault.com/questions/573946/how-can-i-log-a-message-to-the-systemd-journal-from-the-command-line  </description>
+      <description> Links  https://www.loggly.com/blog/why-journald/ https://www.loggly.com/ultimate-guide/linux-logging-with-systemd/ Schreibe logs in journald - http://serverfault.com/questions/573946/how-can-i-log-a-message-to-the-systemd-journal-from-the-command-line  Bind multiple service to same port/socket Sockets=
+ReusePort=
+Manage Traffic per service http://0pointer.net/blog/ip-accounting-and-access-lists-with-systemd.html
+Use PolicyKit to manage service access https://github.com/systemd/systemd/commit/88ced61bf9673407f4b15bf51b1b408fd78c149d
+https://www.thegeekdiary.com/how-to-manage-systemd-services-with-a-non-root-user/
+http://www.admin-magazine.com/Articles/Assigning-Privileges-with-sudo-and-PolicyKit
+Overview man (manuals) https://www.freedesktop.org/software/systemd/man/
+Libs https://github.com/coreos/go-systemd#
+https://github.com/coreos/systemd-rest
+Talks  https://www.youtube.com/watch?v=_obJr3a_2G8 https://www.youtube.com/watch?v=sqhojVPr7xM  </description>
     </item>
     
     <item>
@@ -478,6 +566,24 @@ Aktiviere eine Soundcard
 amixer set Master on # Wenn man mehrer Karten hat oder zu sonstigen Problemen kommt kann man probieren ob man mittels -c und vielleicht auch noch -D die Karten und das Device direkt ansprechen kann amixer -c 1 Master on  Informationen über die Soundcards
 cat /proc/asound/cards aplay -l aplay -L  Lautsprecher Testen
 speaker-test -D hw:1,3 -c 2  Dabei besteht die einfache Möglichkeit die Kanalanzahl zu übergeben (-c 2).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://p.f9a.de/blobs/ohne-titel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://p.f9a.de/blobs/ohne-titel/</guid>
+      <description>Eine Datenansicht einer Architektur zeigt den Anwendungszustand an, wenn Informationen durch die Komponenten fließen. Da REST speziell auf verteilte Informationssysteme ausgerichtet ist, betrachtet es eine Anwendung als eine zusammenhängende Struktur von Informations- und Kontrollalternativen, durch die ein Benutzer eine gewünschte Aufgabe ausführen kann. So ist beispielsweise das Nachschlagen eines Wortes in einem Online-Wörterbuch eine Anwendung, ebenso wie das Durchsuchen eines virtuellen Museums oder das Durchlesen einer Reihe von Notizen, um für eine Prüfung zu lernen.</description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://p.f9a.de/blobs/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://p.f9a.de/blobs/design/</guid>
+      <description>Color  Hue: what color something is, like blue or red Chroma: how pure a color is; the lack of white, black or gray added to it Saturation: the strength or weakness of a color Value: how light or dark a color is Tone: created by adding gray to a pure hue Shade: created by adding black to a pure hue Tint: created by adding white to a hue  What colors mean  Red: energy, power, passion Orange: joy, enthusiasm, creativity Yellow: happiness, intellect, energy Green: ambition, growth, freshness, safety Blue: tranquility, confidence, intelligence Purple: luxury, ambition, creativity Black: power, elegance, mystery White: cleanliness, purity, perfection  Basic Rules Start with greyscale.</description>
     </item>
     
   </channel>
